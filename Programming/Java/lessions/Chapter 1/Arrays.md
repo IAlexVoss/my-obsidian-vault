@@ -161,4 +161,4 @@ for (int i = 0; i < nums.length; i++) {
 }
 ```
 
-Secret line, secret one
+Secret line, secret one, And some equal one
