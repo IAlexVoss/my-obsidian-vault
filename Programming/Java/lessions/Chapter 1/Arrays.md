@@ -19,7 +19,7 @@ data_type name_of_the_array[];
 data_type[] name_of_the_array;
 ```
 
-If you need declare multiple arrays, use the next representation:
+If you need declare multiple arrays, **use** the next representation:
 
 ```Java
 int[] arr1, arr2, arr3;
