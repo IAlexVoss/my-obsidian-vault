@@ -117,3 +117,27 @@ class Person {
 ```
 
 Any person have the name and age.
+
+For initialize these fields, you just should define its fields value, like this:
+
+```Java
+class Person {
+	
+	String name = "Undefined";
+	int age = 1;
+}
+```
+
+This is the default values of this class fields
+
+And, we also may set its fields values like this (not be default!):
+
+```Java
+class Program {
+
+	public static void main(String[] args) {
+		
+		Person tom 
+	}
+}
+```
