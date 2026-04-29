@@ -83,7 +83,41 @@ class Person {
 	int age;
 	
 	void print() {
-		Sustem.out.printf("Name: %s \tAge: %d");
+		Sustem.out.printf("Name: %s \tAge: %d\n", name, age);
 	}
 }
 ```
+
+To call the print method, the main method uses the `tom.print()`. That is, as in the case of fields, the name of the class variable is followed by a period and then the name of the method. Since the print method has no parameters, empty parentheses are placed after its name. As a result, when the program is executed, we will see information about the object fields on the console:
+
+```Console
+Name: Tom          Age: 41
+```
+
+One of the advantages of the methods is that we can derive some general actions in the method and then call them repeatedly in different places in the program. For example:
+
+```Java
+class Program {
+	
+	public static void main(String[] args) {
+		
+		Person tom = new Person();
+		
+		tom.name = "Tom";
+		tom.age = 41;
+		
+		tom.print(); // call print() method from the Person class for tom object
+	}
+}
+
+class Person {
+	
+	String name;
+	int age;
+	
+	void print() {
+		Sustem.out.printf("Name: %s \tAge: %d\n", name, age);
+	}
+}
+```
+
