@@ -49,3 +49,25 @@ Then, the required amounts (calculated once in the loop or each time as needed):
 	(value ranges from -1 to 1; the closer to 1, the better the line fits the points)
 - Prediction for a given x: y_pred = $a * x + b$
 
+# Example of program output:
+
+```Console
+How many points? 3
+Enter x1, y1: 1  2
+Enter x2, y2: 2  4
+Enter x3, y3: 3  5
+
+Menu:
+1 – Slope a
+2 – Intercept b
+3 – Correlation r
+4 – Predict y
+5 – Equation
+0 – Exit
+Your selection: 1
+
+Result: a = 1.5
+
+... (after selecting 5)
+Equation of the line: y = 1.5 * x + 0.8333333333333333
+```
