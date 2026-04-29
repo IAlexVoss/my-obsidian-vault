@@ -57,7 +57,19 @@ class Person {} // Person class
 ```
 
 But, <mark class="hltr-r">it's not creating a new object of class Person</mark>, <mark class="hltr-g">we simply created the variable of Person class</mark>.
-For define any object, we needs a **new** keyword:
+For define any object, we need a **new** keyword and Class Constructor.
+
+To create an object, use **Constructors**. Constructors are essentially special methods, named after a class, that are called when a new class object is created and initialise the object. General Constructor Call Syntax:
+
+```Java
+new class_constructor(params);
+```
+
+First comes the operator **new**, which allocates memory for an object, followed by a call **Designer**.****
+
+## Default constructor
+
+If no constructors are defined in a class (as is the case with our empty Person class), then an empty one is automatically created for that class **Default constructor**, which does not accept No parameters. Therefore, let's use the default constructor to create an object of the Person class:****
 
 ```Java
 class Program {
@@ -71,5 +83,4 @@ class Program {
 class Person {}
 ```
 
-
-
+To create a Person object, you use the new Person(). As a result, after this expression is executed, a memory area will be allocated where all the data of the Person object will be stored. And the tom variable will receive a reference to the created object, a
