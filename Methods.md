@@ -11,3 +11,17 @@ The general definition of methods is as follows:
 ```
 
 Modifiers and parameters are optional.
+
+By default, the main class of any Java program contains a main method that serves as an entry point into the program:
+
+```Java
+class Program {
+	
+	public static class main(String[] args) {
+		
+		System.out.println("Hello world");
+	}
+}
+```
+
+Keywords `public` and `static` are modifiers. Next is the return type.
