@@ -27,7 +27,7 @@ Menu:
 ```
 
 Complete this point by a switch-case construction.
-For every case, use the sum cycles ($sumX$, $sumY$, $sumXY$, $sumX^2$ ) - these requires for formulas.
+For every case, use the sum cycles ($sumX$, $sumY$, $sumXY$, $sumX^2$, $sumY^2$) - these requires for formulas.
 Add the conditional checkers - (If every x as the same, throw an exception: Dividing by zero)
 
 # Additionally
