@@ -139,7 +139,25 @@ class Program {
 		
 		Person tom = new Person;
 		
+		tom.name = "Tom";
+		tom.age = 41;
 		
+		System.out.println(tom.name);
+		System.out.println(tom.age);
 	}
 }
+
+class Person {
+
+	String name;
+	int age;
+}
+```
+
+Our class Person - it's just a template for any objects of this class.
+
+We may get access for the object's fields by the following construct:
+
+```Java
+object.field_name = "something" // Set the value of the object's field
 ```
