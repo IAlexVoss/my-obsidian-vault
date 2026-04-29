@@ -59,3 +59,31 @@ The method is called in the form:
 method_name(args);
 ```
 
+After the method name, there are parentheses that list the arguments - values for the method parameters.
+
+Simple example for run:
+
+```Java
+class Program {
+	
+	public static void main(String[] args) {
+		
+		Person tom = new Person();
+		
+		tom.name = "Tom";
+		tom.age = 41;
+		
+		tom.print(); // call print() method from the Person class for tom object
+	}
+}
+
+class Person {
+	
+	String name;
+	int age;
+	
+	void print() {
+		Sustem.out.printf("Name: %s \tAge: %d");
+	}
+}
+```
