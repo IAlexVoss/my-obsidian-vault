@@ -24,4 +24,38 @@ class Program {
 }
 ```
 
-Keywords `public` and `static` are modifiers. Next is the return type.
+Keywords `public` and `static` are modifiers. Next is the return type. Keyword `void` indicates that the method does not return anything.
+
+For example, let's create a class and define the:
+
+```Java
+class Person {
+	
+	String name;
+	int age;
+	
+	void print() {
+		
+		System.out.println("Name: " + name + "\tAge: " + age + "\n");
+	}
+}
+
+class Program {
+	public static void main(String[] args) {
+		
+	}
+}
+```
+
+Here, a Person class is defined with two fields, name and age, and one print method. The print iode as the return type is of type `void` (that is, in fact, it does not return anything) and does not accept any parameters. All this method does is print the values of the name and age variables to the console.
+
+But in order to apply the method, it must be **Call**.
+
+# Calling the
+
+The method is called in the form:
+
+```Java
+method_name(args);
+```
+
