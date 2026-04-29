@@ -1,1 +1,2 @@
 With the help of parameters, we can pass various data to the methods that will be used for calculations. For example, let's define the following program:
+
