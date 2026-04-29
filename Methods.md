@@ -105,8 +105,13 @@ class Program {
 		
 		tom.name = "Tom";
 		tom.age = 41;
+		tom.print();
 		
-		tom.print(); // call print() method from the Person class for tom object
+		tom.name = "Tomas";
+		tom.print();
+		
+		tom.name = "Tommy";
+		tom.print();
 	}
 }
 
@@ -120,4 +125,16 @@ class Person {
 	}
 }
 ```
+
+Console output:
+
+```Console
+Name: Tom    Age: 41
+Name: Tomas  Age: 41
+Name: Tommy  Age: 41
+```
+
+# Calling Methods in Other Methods of a Class
+
+
 
