@@ -27,4 +27,32 @@ class class_name {
 
 The name of the class follows the same rules as the variables' names. But in general, there is a convention in Java that class names usually begin with a capital letter.
 
-For example, let's define a class with name Person (Persin class)
+For example, let's define a class with name Person (Person class):
+
+```Java
+class Program {
+	
+	public static void main(String[] args) {
+		
+	}
+}
+
+class Person{}
+```
+
+Classes in Java represent separate types of data. And when we define a new class that doesn't even do anything and doesn't have any content, we're actually defining ***a new type of data***. And as standard and existing Java data types, <mark class="hltr-r">we also can define variables of that type</mark>.
+
+For example:
+
+```Java
+class Program {
+	
+	public static void main(String[] args) {
+		
+		Person tom; // define a new object of class Person
+	}
+}
+
+class Person {} // Person class
+```
+
