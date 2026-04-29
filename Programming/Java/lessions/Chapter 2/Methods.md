@@ -136,5 +136,45 @@ Name: Tommy  Age: 41
 
 # Calling Methods in Other Methods of a Class
 
+Some methods of a class can call other methods of this class:
 
+```Java
+class Program {
+	
+	public static void main(String[] args) {
+		
+		Person tom = new Person();
+		
+		tom.name = "Tom";
+		tom.age = 41;
+		tom.print();
+	}
+}
+
+class Person {
+	
+	String name;
+	int age;
+	
+	void printName() {
+		System.out.printf("Name: %s\n", name);
+	}
+	
+	void printAge() {
+		System.out.printf("Age: %d\n", age);
+	}
+	
+	void print() {
+		printName();
+		printAge();
+	}
+}
+```
+
+Here, two other methods of the class are called in the print method, printName and printAge. Console Program Output:
+
+```Console
+Name: Tom
+Age: 41
+```
 
