@@ -32,6 +32,20 @@ Add the conditional checkers - (If every x as the same, throw an exception: Divi
 
 # Additionally
 
-You have n points ($x_i$, $y_i$)
+##### You have n points ($x_i$, $y_i$)
 
-Then, the required amounts (ca)
+Then, the required amounts (calculated once in the loop or each time as needed):
+- - Sx = Σ $x_i$
+- - Sy = Σ $y_i$
+- - Sxy = Σ ($x_i$ * $y_i$)
+- - Sxx = Σ $(x_i)^2$
+- - Syy = Σ $(y_i)^2$
+#### Formulas:
+
+- Slope a = $(n * Sxy - Sx * Sy) / (n * Sxx - Sx * Sx)$
+- Intercept b = $(Sy - a * Sx) / n$
+- Correlation coefficient:
+	$r = (n * Sxy - Sx * Sy) / sqrt((n*Sxx - Sx²) * (n*Syy - Sy²))$
+	(value ranges from -1 to 1; the closer to 1, the better the line fits the points)
+- Prediction for a given x: y_pred = $a * x + b$
+
