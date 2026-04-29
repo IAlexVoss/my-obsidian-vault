@@ -83,4 +83,37 @@ class Program {
 class Person {}
 ```
 
-To create a Person object, you use the new Person(). As a result, after this expression is executed, a memory area will be allocated where all the data of the Person object will be stored. And the tom variable will receive a reference to the created object, a
+To create a Person object, you use the new Person(). As a result, after this expression is executed, a memory area will be allocated where all the data of the Person object will be stored. And the tom variable will receive a reference to the created object, and through this variable we can use this object and access its functionality.
+
+But while we haven't defined any functionality in the Person class, Java allows us to output the object to the console:
+
+```Java
+class Program {
+
+	public static void main(String[] args) {
+		
+		Person tom = new Person();
+		System.out.println(tom);
+	}
+}
+
+class Person {}
+```
+
+In this case, Java outputs some textual representation of an object of type "Person@1dbd16a6".
+
+# Class  Fields
+
+Any class may have any fields. Class Fields - it's the variables of the class object.
+
+Some example:
+
+```Java
+class Person {
+	
+	String name;
+	int age;
+}
+```
+
+Any person have the name and age.
