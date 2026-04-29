@@ -14,3 +14,17 @@ class Program {
 	}
 }
 ```
+
+# Defining class
+
+A class is defined using a keyword **Class**, followed by the class name:
+
+```Java
+class class_name {
+
+}
+```
+
+The name of the class follows the same rules as the variables' names. But in general, there is a convention in Java that class names usually begin with a capital letter.
+
+For example, let's define a class with name Person (Persin class)
