@@ -137,7 +137,9 @@ class Program {
 
 	public static void main(String[] args) {
 		
-		Person tom 
+		Person tom = new Person;
+		
+		
 	}
 }
 ```
