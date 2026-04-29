@@ -159,5 +159,6 @@ Our class Person - it's just a template for any objects of this class.
 We may get access for the object's fields by the following construct:
 
 ```Java
-object.field_name = "something" // Set the value of the object's field
+object.field_name = "something"  // Sets the value of the object's field
+String name = object.field_name; // Gets the value of the object's field
 ```
