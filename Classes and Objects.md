@@ -49,10 +49,27 @@ class Program {
 	
 	public static void main(String[] args) {
 		
-		Person tom; // define a new object of class Person
+		Person tom; // define a new variable of class Person
 	}
 }
 
 class Person {} // Person class
 ```
+
+But, <mark class="hltr-r">it's not creating a new object of class Person</mark>, <mark class="hltr-g">we simply created the variable of Person class</mark>.
+For define any object, we needs a **new** keyword:
+
+```Java
+class Program {
+	
+	public static void main(String[] args) {
+		
+		Person tom = new Person(); // define a new object of class Person
+	}
+}
+
+class Person {}
+```
+
+
 
