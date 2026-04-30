@@ -41,7 +41,49 @@ class Program {
 		Person tom = new Person();
 		System.out.println(tom.sayHello()); // Hello
 		
-		String message = 
+		String message = tom.sayHello();
+		Syste.out.println(message); // Hello
 	}
+}
+
+class Person {
+	
+	String sayHello() {
+		return "Hello";
+	}
+}
+```
+
+Method `sayHello()` returns the value of the type `String`. Therefore, we can assign this meaning to some variable of type String:
+
+```Java
+String message = sayHello();
+```
+
+Or even pass it as a value to a parameter of another method:
+
+```Java
+System.out.println(tom.sayHello());
+```
+
+You can also specify complex expressions or calls to other methods that return a specific result after the return statement. For example, let's define a method that returns the sum of numbers:
+
+```Java
+class Program {
+	
+	public static void main(String[] args) {
+		
+		Calculator calc = new Calculater();
+		
+		int result = calc.sum(10, 12); // 22
+		System.out.println(result); // 22
+		
+		System.out.println(calc.sum(10, 15)); // 25
+	}
+}
+
+class Calculator {
+	
+	int sum 
 }
 ```
