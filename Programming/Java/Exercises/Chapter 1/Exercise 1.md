@@ -11,7 +11,7 @@ Purpose: Statistics and predictions based on points (least squares method).
 
 Your actions:
 
-1. Asked user about "n" points amount (an integer, from 2 to 100).
+1. Asked user about "n" points amount (an integer, from 2 to 10).
 2. Create 2 arrays: double x[] and double y[] of size n.
 3. Filled them - user input values x and y step by step for every point.
 4. After filling, shows the menu:
