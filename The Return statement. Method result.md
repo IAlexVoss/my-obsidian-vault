@@ -119,9 +119,49 @@ class Time {
 		else if (hour >= 15)
 			return "Good evening";
 		else if (hour >= 11)
+			return "Good after noon";
+		else
+			return "Good morning"; 
+	}
+}
+```
+
+Here, the asString method of the Time class takes the current hour via the hour parameter and returns a value of type String, which is a string, which effectively converts an hour to a string. And depending on the value of the hour parameter, the returned string will vary.
+
+# Exiting the method
+
+Cinematographer **return** It is used to return a value from a method, but also to exit a method. In this capacity, the return operator is used in methods that return nothing, that is, are of type `void`:
+
+```Java
+class Program {
+	
+	public static void main(String[] args) {
+		
+		Time time = new Time();
+		System.out.println(7); // Goog morning
+		System.out.println(13); // Goog after noon
+		System.out.println(32);
+		System.out.println(56); 
+		System.out.println(2); // Goog night
+	}
+}
+
+class Time {
+	
+	// method thats get current hour
+	void asString(int hour) {
+		
+		// if value is incorrect
+		if (hour > 24 || hour < 0)
+			return;
+		else if (hour > 21 || hour < 6)
+			System.out.println();"Good night"
+		else if (hour >= 15)
+			return "Good evening"
+		else if (hour >= 11)
 			return "Good after noon"
 		else
-			return  
+			return "Good morning" 
 	}
 }
 ```
