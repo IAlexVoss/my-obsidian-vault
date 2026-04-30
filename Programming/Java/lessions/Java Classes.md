@@ -8,4 +8,6 @@ This file contains chapter 2 of Java programming.
 
 #### [[Method Parameters]]
 
+#### [[The Return statement. Method result]]
+
 #### 

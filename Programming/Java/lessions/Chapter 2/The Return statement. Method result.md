@@ -155,13 +155,13 @@ class Time {
 		if (hour > 24 || hour < 0)
 			return;
 		else if (hour > 21 || hour < 6)
-			System.out.println();"Good night"
+			System.out.println("Good night");
 		else if (hour >= 15)
-			return "Good evening"
+			System.out.println("Good evening");
 		else if (hour >= 11)
-			return "Good after noon"
+			System.out.println("Good after noon");
 		else
-			return "Good morning" 
+			System.out.println("Good morning");
 	}
 }
 ```
