@@ -132,13 +132,16 @@ class Program {
 	public static void main(String[] args) {
 		
 		Calculator calc = new Calculator();
-		calc.sum(1, 2, 3);
+		calc.sum("Sum of {1, 2, 3}: " 1, 2, 3);
+		calc.sum("Zero sum: ");
 	}
 }
 
 class Calculator {
 	
-	void sum(int ...nums) {
+	void sum(String message, int ...nums) {
+		
+		System.out.print(message);
 		
 		int result = 0;
 		for(int n: nums)
@@ -148,3 +151,5 @@ class Calculator {
 	}
 }
 ```
+
+
