@@ -100,6 +100,43 @@ class Program {
 
 class Person {
 
+	String name;
+	int age;
 	
+	Person() {
+	
+		name = "Undefined";
+		age = 18;
+	}
+	
+	Person(String username) {
+		
+		name = username;
+		age = 18;
+	}
+	
+	Person(String username, int userage) {
+		
+		name = username;
+		age = userage;
+	}
+	
+	void print() {
+		
+		System.out.printf("Name: %s; Age: %d\n", name, age);
+	}
 }
 ```
+
+There are now three constructors defined in the class, each of which takes a different number of parameters and sets the values of the class fields.
+
+Console output:
+
+```Console
+Name: Undefined  Age: 18
+Name: Bob  Age: 18
+Name: Sam  Age: 25
+```
+
+# Keyword this
+
