@@ -29,5 +29,62 @@ Hello
 But no matter how much we call the say method, the result won't change. And to be able to customise the behaviour of the method externally, the parameters are applied. Parameters are defined in parentheses after the method name in the form:
 
 ```Java
-dataTypeOfMethod NameOfTheMethod (dataTypeOfParam1 param1, dataTypeOfParam1 param1)
+dataTypeOfMethod NameOfTheMethod (dataTypeOfParam1 param1, dataTypeOfPara1 param2) {
+	// Method's actions
+}
+```
+
+The definition of a parameter consists of two parts: first comes the type of the parameter and then its name.
+
+So, let's use the parameters and for this we will change the program as follows:
+
+```Java
+class Program {
+	
+	public static void main(String[] args) {
+		
+		Person tom = new Person();
+		tom.say("Hello work"); // Hello work
+		tom.say("Hello gold"); // Hello gold
+	}
+}
+
+class Person {
+
+	void say(String message) {
+		System.out.println(message);
+	}
+}
+```
+
+Here the method `say()` now takes a single parameter called message and is of type `String`.
+
+```Java
+tom.say("Hello work");
+```
+
+Here, the `message` The string "Hello work" is passed. The values that are passed to the parameters are also called **arguments**. That is, the string "Hello work" passed in this case is an argument.
+
+Sometimes you can find such definitions as Formal parameters and Actual Parameters. Formal parameters are the actual parameters of the method (in this case, message), and actual parameters are values that are passed to formal parameters. That is, the actual parameters are the arguments of the.
+
+Let's look at another example where we have a method that adds two numbers:
+
+```Java
+class Program {
+
+	public static void main(String[] args) {
+		
+		Calculator calc = new Calculator();
+		calc.sum(1, 2);
+		calc.sum(1, 3);
+		calc.sum(2, 4);
+	}
+}
+
+class Calculator {
+	
+	void sum(int a, int b) {
+		System.out.println(a + b);
+	}
+}
 ```
