@@ -84,6 +84,44 @@ class Program {
 
 class Calculator {
 	
-	int sum 
+	int sum(int a, int b) {
+		
+		return a + b;
+	}
+}
+```
+
+A method can use multiple operator calls **return** to return different values depending on some conditions:
+
+```Java
+class Program {
+	
+	public static void main(String[] args) {
+		
+		Time time = new Time();
+		System.out.println(time.asString(7)); // Goog morning
+		System.out.println(time.asString(13)); // Goog after noon
+		System.out.println(time.asString(18)); // Goog evening
+		System.out.println(time.asString(2)); // Goog night
+	}
+}
+
+class Time {
+	
+	// method thats get current hour
+	String asString(int hour) {
+		
+		// if value is incorrect
+		if (hour > 24 || hour < 0)
+			return "Invalid data";
+		else if (hour > 21 || hour < 6)
+			return "Good night";
+		else if (hour >= 15)
+			return "Good evening";
+		else if (hour >= 11)
+			return "Good after noon"
+		else
+			return  
+	}
 }
 ```
