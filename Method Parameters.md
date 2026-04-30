@@ -87,4 +87,64 @@ class Calculator {
 		System.out.println(a + b);
 	}
 }
+``` 
+
+# Variable Length Options
+
+A method can accept variable length parameters of the same type. For example, we need to pass a set of numbers to the method and calculate their sum, but we don't know exactly how many numbers will be passed - 3, 4, 5, or more. Variable length parameters allow you to solve this problem:
+
+```Java
+class Program {
+
+	public static void main(String[] args) {
+		
+		Calculator calc = new Calculator();
+		calc.sum(1, 2, 3);
+		calc.sum(1, 2, 3, 4, 5);
+		calc.sum();
+	}
+}
+
+class Calculator {
+	
+	void sum(int ...nums) {
+		
+		int result = 0;
+		for(int n: nums)
+			result += n;
+			
+		System.out.println(result);
+	}
+}
+```
+
+Look at this:
+
+> void sum(int **...nums**)
+
+...nums <- this is a Collection of integer numbers, and we can iterate it in for cycle.
+
+Another high-moderate example:
+
+```Java
+class Program {
+
+	public static void main(String[] args) {
+		
+		Calculator calc = new Calculator();
+		calc.sum(1, 2, 3);
+	}
+}
+
+class Calculator {
+	
+	void sum(int ...nums) {
+		
+		int result = 0;
+		for(int n: nums)
+			result += n;
+			
+		System.out.println(result);
+	}
+}
 ```
