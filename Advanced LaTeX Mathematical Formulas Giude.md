@@ -264,4 +264,32 @@ Example: ---
 
 $\oint_C F\cdot dr \qquad \iint_D dx\,dy$ - `\oint_C F\cdot dr \qquad \iint_D dx\,dy`
 
-Use ``
+Use `\substack` on multiple integrals limits:
+
+```latex
+\int\limits_{\substack{x>0 \\ y>0}} f{x,y}\,dx\,dy
+```
+
+$\int\limits_{\substack{x>0 \\ y>0}} f{x,y}\,dx\,dy$ - `\int\limits_{\substack{x>0 \\ y>0}} f{x,y}\,dx\,dy`
+
+# 6. Matrices
+
+## Standard matrices (from `asmath`)
+
+```latex
+\begin{pmatrix} a & b \\ c & d \end{pmatrix} % parentheses
+\begin{bmatrix} a & b \\ c & d \end{bmatrix} % brackets
+\begin{Bmatrix} a & b \\ c & d \end{Bmatrix} % braces
+\begin{vmatrix} a & b \\ c & d \end{vmatrix} % single bars
+\begin{Vmatrix} a & b \\ c & d \end{Vmatrix} % double bars
+```
+
+Example: ---
+
+$$
+\begin{pmatrix} a & b \\ c & d \end{pmatrix}
+\begin{bmatrix} a & b \\ c & d \end{bmatrix}
+\begin{Bmatrix} a & b \\ c & d \end{Bmatrix}
+\begin{vmatrix} a & b \\ c & d \end{vmatrix}
+\begin{Vmatrix} a & b \\ c & d \end{Vmatrix}
+$$
