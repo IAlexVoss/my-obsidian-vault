@@ -22,6 +22,15 @@ Load these in your preamble for full functionality:
 | `qquad` | 2 em                  | a`\qquad b` |
 | `\!`    | -3/18 quad (negative) | `a\!b`      |
 
+Example:
+
+$a\,b$ - `a\,b` 3/18 quad
+$a\:b$ - `a\:b` 4/18 quad
+$a\;b$ - `a\;b` 5/18 quad
+$a\quad b$ - `a\quad b`
+$a \qquad b$ - `a \qquad b`
+$a\!b$ - `a\!b` 
+
 Use `\!` to tighten integrals or move limits:
 
 ```latex
