@@ -219,5 +219,5 @@ $$
 ## Subscriptions under operators: `\substack`
 
 ```latex
-
+\sum_{\substack{1\le i\le n \\ i\ne j}} a_{i}
 ```
