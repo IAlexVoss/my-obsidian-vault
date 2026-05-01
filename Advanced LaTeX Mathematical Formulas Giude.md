@@ -25,5 +25,5 @@ Load these in your preamble for full functionality:
 Use `\!` to tighten integrals or move limits:
 
 ```latex
-	\int\!\!\!\int_D f\,dx\,dy % double integrals
+	\int\!\!\!\int_D f\,dx\,dy % double integrals with less space
 ```
