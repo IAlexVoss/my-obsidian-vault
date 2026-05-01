@@ -293,3 +293,33 @@ $$
 \begin{vmatrix} a & b \\ c & d \end{vmatrix}
 \begin{Vmatrix} a & b \\ c & d \end{Vmatrix}
 $$
+
+## Custom alignment with `array`
+
+```latex
+\left( \begin{array}{c|c}
+a & b \\ \hline
+c & d
+\end{array} \right)
+```
+
+Example: ---
+
+$$
+\left( \begin{array}{c|c}
+a & b \\ \hline
+c & d
+\end{array} \right)
+$$
+
+## Dotted matrices
+
+Use `\cdots`, `\ddots`, `\vdots` inside `matrix`:
+
+```latex
+\begin{pmatrix}
+a_{11} & a_{12} & \cdots & a_{1n} \\
+a_{21} & a_{22} & \cdots & a_{2n} \\
+\vdots & \vdots & \ddots & \vdots \\
+a_{m1} & a_{m2} & \cdots & a_{mn}
+```
