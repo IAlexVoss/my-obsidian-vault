@@ -143,5 +143,42 @@ Align at multiple points:
 ```latex
 \begin{align}
 x &= y       &  a &= b + c \\
-z &= w + 1 
+z &= w + 1   &  d &= e
+\end{align}
+```
+
+Example:
+
+$$
+\begin{align}
+x &= y       &  a &= b + c \\
+z &= w + 1   &  d &= e
+\end{align}
+$$
+
+## `split` for one equation spanning lines (single number)
+
+```latex
+\begin{equation}
+\begin{split}
+f(x) &= (x+1)^2 \\
+     &= x^2 + 2x + 1
+\end{split}
+\end{equation}
+```
+
+$$
+\begin{equation}
+\begin{split}
+f(x) &= (x+1)^2 \\
+     &= x^2 + 2x + 1
+\end{split}
+\end{equation}
+$$
+
+## `cases` for piecewise definitions
+
+```latex
+f(x) = \begin{cases}
+x^2, 
 ```
