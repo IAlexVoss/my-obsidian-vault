@@ -580,3 +580,9 @@ x, & \text{if } x\ge 0,\\
 -x, & \text{otherwise.}
 \end{cases}
 $$
+
+## Big system of equations
+
+```latex
+
+```
