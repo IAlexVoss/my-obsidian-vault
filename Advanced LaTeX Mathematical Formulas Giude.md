@@ -27,3 +27,7 @@ Use `\!` to tighten integrals or move limits:
 ```latex
 	\int\!\!\!\int_D f\,dx\,dy % double integrals with less space
 ```
+
+Example:
+
+$\int\!\!\!\int_D f\,dx\,dy$ 
