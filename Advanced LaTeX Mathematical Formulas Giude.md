@@ -361,5 +361,47 @@ $\lim_{x\to 0} \text{(by continuty)} f(x)$ - `\lim_{x\to 0} \text{(by continuty)
 ## `\intertext` to insert text between aligned equations
 
 ```latex
+\begin{align*}
+A &= B \\
+\intertext{and by the lemma we have}
+B &= C
+\end{align*}
+```
 
+# 8. Symbols and Fonts
+
+## Blackboard bold (ℕ, ℝ, ℂ, …)
+
+```latex
+\mathbb{N} \quad \mathbb{R} \quad \mathbb{C}
+```
+
+Example: ---
+
+$\mathbb{N} \quad \mathbb{R} \quad \mathbb{C}$ - `\mathbb{N} \quad \mathbb{R} \quad \mathbb{C}`
+
+## Calligraphic (𝒜, ℬ, …)
+
+```latex
+\mathcal{A} \quad \mathcal{B}
+```
+
+Example: ---
+
+$\mathcal{A} \quad \mathcal{B}$ - \mathcal{A} \quad \mathcal{B}
+
+## Fraktur (𝔄, 𝔅, …)
+
+```latex
+\mathfrak{A} \quad \mathfrak{B}
+```
+
+Example: ---
+
+$\mathfrak{A} \quad \mathfrak{B}$ - `\mathfrak{A} \quad \mathfrak{B}`
+
+## Bold symbols (for vectors, matrices)
+
+```latex
+\mathbf{x} \quad \bm{\alpha}    % \bm from bm package ()
 ```
