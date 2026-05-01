@@ -1,0 +1,3 @@
+Key facts:
+
+- Pythagorean theorem: $a^2 + b^2 = c^2$ (legs )
