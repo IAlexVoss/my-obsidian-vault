@@ -403,5 +403,43 @@ $\mathfrak{A} \quad \mathfrak{B}$ - `\mathfrak{A} \quad \mathfrak{B}`
 ## Bold symbols (for vectors, matrices)
 
 ```latex
-\mathbf{x} \quad \bm{\alpha}    % \bm from bm package ()
+\mathbf{x} \quad \bm{\alpha}    % \bm from bm package (preferred)
+```
+
+Example: ---
+
+$\mathbf{x} \quad \bm{\alpha}$ - `\mathbf{x} \quad \bm{\alpha}`
+
+## Underline, overline, and accents
+
+```latex
+\bar{x} \quad \hat{y} \quad \tilde{z} \quad \vec{v}
+\overline{ABC} \quad \underline{abc}
+\widehat{AB} \quad \widetilde{AB}
+```
+
+Example: ---
+
+$$
+\bar{x} \quad \hat{y} \quad \tilde{z} \quad \vec{v}
+\overline{ABC} \quad \underline{abc}
+\widehat{AB} \quad \widetilde{AB}
+$$
+
+## Decorated arrows
+
+```latex
+\xrightarrow{f} \quad \xleftarrow{\text{def}}
+```
+
+Example: ---
+
+$\xrightarrow{f} \quad \xleftarrow{\text{def}}$ - `\xrightarrow{f} \quad \xleftarrow{\text{def}}`
+
+# 9. Labels, References, and Sub-numbering
+
+## Equation numbering
+
+```latex
+\begin{equation}\label{eq:enstein}
 ```
