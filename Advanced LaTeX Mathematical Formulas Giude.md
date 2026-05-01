@@ -322,4 +322,44 @@ a_{11} & a_{12} & \cdots & a_{1n} \\
 a_{21} & a_{22} & \cdots & a_{2n} \\
 \vdots & \vdots & \ddots & \vdots \\
 a_{m1} & a_{m2} & \cdots & a_{mn}
+\end{pmatrix}
+```
+
+Example ---
+
+$$
+\begin{pmatrix}
+a_{11} & a_{12} & \cdots & a_{1n} \\
+a_{21} & a_{22} & \cdots & a_{2n} \\
+\vdots & \vdots & \ddots & \vdots \\
+a_{m1} & a_{m2} & \cdots & a_{mn}
+\end{pmatrix}
+$$
+
+# 7. Text inside Math
+
+## `\text` (from `asmath`) - adapts to current style
+
+```latex
+f(x) = \text{the function } x^2 \text{ for } x>0
+```
+
+Example: ---
+
+$f(x) = \text{the function } x^2 \text{ for } x>0$ - `f(x) = \text{the function } x^2 \text{ for } x>0`
+
+## `\textup`, `textit`, etc. for explicit font
+
+```latex
+\lim_{x\to 0} \text{(by continuty)} f(x)
+```
+
+Example: ---
+
+$\lim_{x\to 0} \text{(by continuty)} f(x)$ - `\lim_{x\to 0} \text{(by continuty)} f(x)`
+
+## `\intertext` to insert text between aligned equations
+
+```latex
+
 ```
