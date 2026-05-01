@@ -584,5 +584,22 @@ $$
 ## Big system of equations
 
 ```latex
-
+\begin{cases}
+\dot x = \sigma(y-x)\\
+\dot y = x(\rho - z) - y\\
+\dot z = xy - \beta z
+\end{cases}
 ```
+
+Example: ---
+
+$$
+\begin{cases}
+\dot x = \sigma(y-x)\\
+\dot y = x(\rho - z) - y\\
+\dot z = xy - \beta z
+\end{cases}
+$$
+
+## Multiline equations with column alignment
+
