@@ -546,5 +546,37 @@ Use: `\grad f` or `\argmax_{x}`. - doesn't work in Obsidian
 ## New command for repeated expressions
 
 ```latex
-\
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\norm}[1]{\left\lVert #1 \right\rVert}
 ```
+
+also doesn't work
+
+## Delimiter scaling ### shortcuts with `\DeclarePairedDelimiter` (mathtools)
+
+```latex
+\DeclarePairedDelimiter{\abs}{\lvert}{\rvert}
+\DeclarePairedDelimiter{\norm}{\lVert}{\rVert}
+```
+
+Now `\abs{x}` gives `|x|`, and `\abs*{\frac{a}{b}}` scales.
+
+# 12. Advanced Examples
+
+## Piecewise with aligned conditions
+
+```latex
+f(x) = \begin{cases}
+x, & \text{if } x\ge 0,\\
+-x, & \text{otherwise.}
+\end{cases}
+```
+
+Example: ---
+
+$$
+f(x) = \begin{cases}
+x, & \text{if } x\ge 0,\\
+-x, & \text{otherwise.}
+\end{cases}
+$$
