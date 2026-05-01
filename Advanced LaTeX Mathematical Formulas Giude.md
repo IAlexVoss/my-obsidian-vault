@@ -242,4 +242,26 @@ $\sideset{}{'}\sum_{n=1}^\infty a_n$ - `\sideset{}{'}\sum_{n=1}^\infty a_n`
 \overset{*}{X} \quad \underset{\text{def}}{=}
 ```
 
-$\overset{*}{X} \quad \underset{\text{def}}{=}$ - 
+Example: ---
+
+$\overset{*}{X} \quad \underset{\text{def}}{=}$ - \overset{*}{X} \quad \underset{\text{def}}{=}
+
+## `\mathclap` for tight spacing (from `mathtools`)
+
+```latex
+\sum_{\mathclap{1\le i\le n}} a_i    % no extra horizontal space
+```
+
+$\sum_{\mathclap{1\le i\le n}} a_i$ - \sum_{\mathclap{1\le i\le n}} a_i
+
+## Integrals with limits
+
+```latex
+\oint_C F\cdot dr \qquad \iint_D dx\,dy
+```
+
+Example: ---
+
+$\oint_C F\cdot dr \qquad \iint_D dx\,dy$ - `\oint_C F\cdot dr \qquad \iint_D dx\,dy`
+
+Use ``
