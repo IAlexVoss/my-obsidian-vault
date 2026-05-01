@@ -521,5 +521,26 @@ $\sfrac{1}{2} \quad \text{(in text)}$ - `\sfrac{1}{2} \quad \text{(in text)}`
 ## Customising radicals
 
 ```latex
-\sqrt[\beta]{x^2 + y^2}
+\sqrt[\beta]{x^2 + y^2}    % index β
+\sqrt[3]{\frac{a}{b}}
 ```
+
+Example: ---
+
+$$
+\sqrt[\beta]{x^2 + y^2}
+\sqrt[3]{\frac{a}{b}}
+$$
+
+# 11. Custom Commands and Operators
+
+## New operator (like `\sin`, `\log`)
+
+```latex
+\DeclareMathOperators{\grad}{grad}     % roman, limits on side
+\DeclareMathOperator*{\argmax}{argmax} % limits below/above
+```
+
+Use: `\grad f` or `\argmax_{x}`.
+
+Example
