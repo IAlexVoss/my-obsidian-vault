@@ -112,5 +112,22 @@ $\Bigl( \frac{1}{2} \Bigr)$ - `\Bigl[ \frac{1}{2} \Bigr]`
 
 Example: ---
 
+$\left( \frac{a}{b} \vphantom{\frac{c}{d}} \right)$ - `\left( \frac{a}{b} \vphantom{\frac{c}{d}} \right)`
 
+# 4. Multi-line Equations
 
+## `align` environment (from `asmath`)
+
+Numbered lines:
+
+```latex
+\begin{align}
+x &= y + z \\
+y &= a^2 + b^2
+\end{align}
+```
+
+Example: ---
+
+$*\begin{align}
+x &= y + z \\$$
