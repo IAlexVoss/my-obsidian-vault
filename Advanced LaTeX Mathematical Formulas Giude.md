@@ -98,5 +98,19 @@ Use `\bigl`, `\Bigl`, `\biggl`, `\Biggl` (and `\bigr` etc.) for better control:
 \Bigl[ \frac{1}{2} \Bigr]
 ```
 
+Example:  ---
 
-## Multi-line Equations
+$\bigl( \frac{1}{2} \bigr)$ - `\bigl( \frac{1}{2} \bigr)`
+
+$\Bigl( \frac{1}{2} \Bigr)$ - `\Bigl[ \frac{1}{2} \Bigr]`
+
+## Multi-line delimiters (with `\vphantom`)
+
+```latex
+\left( \frac{a}{b} \vphantom{\frac{c}{d}} \right)    % match height
+```
+
+Example: ---
+
+
+
