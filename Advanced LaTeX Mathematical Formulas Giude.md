@@ -22,7 +22,7 @@ Load these in your preamble for full functionality:
 | `qquad` | 2 em                  | a`\qquad b` |
 | `\!`    | -3/18 quad (negative) | `a\!b`      |
 
-Example:
+Example: ---
 
 $a\,b$ - `a\,b`                    3/18 quad
 $a\:b$ - `a\:b`                    4/18 quad
@@ -37,7 +37,7 @@ Use `\!` to tighten integrals or move limits:
 	\int\!\!\!\int_D f\,dx\,dy % double integrals with less space
 ```
 
-Example:
+Example: ---
 
 $\int\!\!\!\int_D f\,dx\,dy$ - `\int\!\!\!\int_D f\,dx\,dy`
 
@@ -57,7 +57,7 @@ $\sum_{k=1}^{n} k$                 % limits on side
 $\displaystyle\sum_{k=1}^{n} k$    % limits above/below
 ```
 
-Example:
+Example: ---
 
 $\sum_{k=1}^{n} k$ - `\sum_{k=1}^{n} k`                                   Default
 
@@ -81,9 +81,22 @@ $\scriptscriptstyle\sum_{k=1}^{n} k$ - `\scriptscriptstyle\sum_{k=1}^{n} k`     
 
 Note: Each `\left` needs a `\right`. Use `\left` or `\right`. for an invisible delimiter.
 
+Example: ---
+
 $\left( \frac{a}{b} \right)$ - `\left( \frac{a}{b} \right)`
 
 $\left[ \int_0^1 x^2 dx \right]$ - `\left[ \int_0^1 x^2 dx \right]`
 
 $\left\{ \begin{pmatrix} 1 & 2 \\ 3 & 4 \end{pmatrix} \right\}$  - `\left\{ \begin{pmatrix} 1 & 2 \\ 3 & 4 \end{pmatrix} \right\}`
 
+## Manual sizing
+
+Use `\bigl`, `\Bigl`, `\biggl`, `\Biggl` (and `\bigr` etc.) for better control:
+
+```latex
+\bigl( \frac{1}{2} \bigr)    % smaller than \left ( \right)
+\Bigl[ \frac{1}{2} \Bigr]
+```
+
+
+## Mu
