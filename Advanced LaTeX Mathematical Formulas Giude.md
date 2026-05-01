@@ -76,9 +76,14 @@ $\scriptscriptstyle\sum_{k=1}^{n} k$ - `\scriptscriptstyle\sum_{k=1}^{n} k`     
 ```latex
 \left( \frac{a}{b} \right)            % parentheses scale
 \left[ \int_0^1 x^2 dx \right]        % brackets scale
-\left\{ begin{pmatrix} 1 & 2 \\ 3 & 4 \end{pmatrix} \right\}
+\left\{ \begin{pmatrix} 1 & 2 \\ 3 & 4 \end{pmatrix} \right\}
 ```
 
 Note: Each `\left` needs a `\right`. Use `\left` or `\right`. for an invisible delimiter.
 
 $\left( \frac{a}{b} \right)$ - `\left( \frac{a}{b} \right)`
+
+$\left[ \int_0^1 x^2 dx \right]$ - `\left[ \int_0^1 x^2 dx \right]`
+
+$\left\{ \begin{pmatrix} 1 & 2 \\ 3 & 4 \end{pmatrix} \right\}$  - `\left\{ \begin{pmatrix} 1 & 2 \\ 3 & 4 \end{pmatrix} \right\}`
+
