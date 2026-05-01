@@ -63,9 +63,18 @@ $\sum_{k=1}^{n} k$ - `\sum_{k=1}^{n} k`                                   Defaul
 
 $\displaystyle\sum_{k=1}^{n} k$ - `\displaystyle\sum_{k=1}^{n} k`              Display
 
-$\textstyle\sum_{k=1}^{n} k$ - `\textstyle\sum_{k=1}^{n} k` 
+$\textstyle\sum_{k=1}^{n} k$ - `\textstyle\sum_{k=1}^{n} k`                Text Style
 
-$\scriptstyle\sum_{k=1}^{n} k$ - `\scriptstyle\sum_{k=1}^{n} k`
+$\scriptstyle\sum_{k=1}^{n} k$ - `\scriptstyle\sum_{k=1}^{n} k`                For Scripts
 
-$\scriptscriptstyle\sum_{k=1}^{n} k$ - `\scriptscriptstyle\sum_{k=1}^{n} k`
+$\scriptscriptstyle\sum_{k=1}^{n} k$ - `\scriptscriptstyle\sum_{k=1}^{n} k`      Smaller
 
+# 3. Advanced Brackets and Delimiters
+
+## Automatic sizing with `\left` and `\right`
+
+```latex
+\left( \frac{a}{b} \right)            % parentheses scale
+\left[ \int_0^1 x^2 dx \right]        % brackets scale
+\left\{ begin{pmatrix} 1 & 2 \\ 3 & 4 \end{pmatrix} \right\}
+```
