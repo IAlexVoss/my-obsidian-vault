@@ -537,10 +537,14 @@ $$
 ## New operator (like `\sin`, `\log`)
 
 ```latex
-\DeclareMathOperators{\grad}{grad}     % roman, limits on side
+\DeclareMathOperator{\grad}{grad}   % roman, limits on side
 \DeclareMathOperator*{\argmax}{argmax} % limits below/above
 ```
 
-Use: `\grad f` or `\argmax_{x}`.
+Use: `\grad f` or `\argmax_{x}`. - doesn't work in Obsidian
 
-Example
+## New command for repeated expressions
+
+```latex
+\
+```
