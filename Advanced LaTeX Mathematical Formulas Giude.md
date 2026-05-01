@@ -442,4 +442,66 @@ $\xrightarrow{f} \quad \xleftarrow{\text{def}}$ - `\xrightarrow{f} \quad \xlefta
 
 ```latex
 \begin{equation}\label{eq:enstein}
+E = mc^2
+\end{equation}
+As seen in \ref{eq:einstein}...
 ```
+
+Example: ---
+
+$$
+\begin{equation}\label{eq:einstein}
+E = mc^2
+\end{equation}
+As seen in \ref{eq:einstein}...
+$$
+
+## Sub-equations (with `subequations`)
+
+```latex
+\begin{subequations}\label{eq:all}
+\begin{align}
+a &= b \label{eq:first}\\
+c &= d \label{eq:second}
+\end{align}
+\end{subequations}
+```
+
+Example: ---
+
+$$
+\begin{subequations}\label{eq:all}
+\begin{align}
+a &= b \label{eq:first}\\
+c &= d \label{eq:second}
+\end{align}
+\end{subequations}
+$$
+
+Ref `\eqref{eq:first}` gives `(1a)`.
+
+## `\tag` to customise number
+
+```latex
+\begin{equation}
+E = mc^2 \tag{★}
+\end{equation}
+```
+
+Example: ---
+
+$$
+\begin{equation}
+E = mc^2 \tag{★}
+\end{equation}
+$$
+
+# 10. Advanced Fractions fractions
+
+```latex
+\cfrac{1}{1 + \cfrac{1}{2 + \cfrac{1}{3}}}
+```
+
+Example: ---
+
+$\cfrac{1}{1 + \cfrac{1}{2 + \cfrac{1}{3}}}$ - `\cfrac{1}{1 + \cfrac{1}{2 + \cfrac{1}{3}}}`
