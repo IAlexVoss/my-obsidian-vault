@@ -59,4 +59,8 @@ $\displaystyle\sum_{k=1}^{n} k$    % limits above/below
 
 Example:
 
-$$
+$\sum_{k=1}^{n} k$ - `\sum_{k=1}^{n} k`
+
+$\displaystyle\sum_{k=1}^{n} k$ - `\displaystyle\sum_{k=1}^{n} k`
+
+$\textstyle\sum_{k=1}^{n} k$ 
