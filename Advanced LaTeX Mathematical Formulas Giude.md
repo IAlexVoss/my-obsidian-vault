@@ -43,12 +43,12 @@ $\int\!\!\!\int_D f\,dx\,dy$ - `\int\!\!\!\int_D f\,dx\,dy`
 
 ## Changing Math style
 
-| Command              | Effect                        |
-| :------------------- | ----------------------------- |
-| `\displaystyle`      | Full size (like display math) |
-| `\textstyle`         | Inline size                   |
-| `\scriptstyle`       | Sub/superscript size          |
-| `\scriptscriptstyle` | Smaller                       |
+| Command              | Effect                                  |
+| :------------------- | --------------------------------------- |
+| `\displaystyle`      | Full size (like display math) - default |
+| `\textstyle`         | Inline size                             |
+| `\scriptstyle`       | Sub/superscript size                    |
+| `\scriptscriptstyle` | Smaller                                 |
 
 Task force sum limits in inline math
 
@@ -59,8 +59,13 @@ $\displaystyle\sum_{k=1}^{n} k$    % limits above/below
 
 Example:
 
-$\sum_{k=1}^{n} k$ - `\sum_{k=1}^{n} k`
+$\sum_{k=1}^{n} k$ - `\sum_{k=1}^{n} k`                                   Default
 
-$\displaystyle\sum_{k=1}^{n} k$ - `\displaystyle\sum_{k=1}^{n} k`
+$\displaystyle\sum_{k=1}^{n} k$ - `\displaystyle\sum_{k=1}^{n} k`              Display
 
-$\textstyle\sum_{k=1}^{n} k$ 
+$\textstyle\sum_{k=1}^{n} k$ - `\textstyle\sum_{k=1}^{n} k` 
+
+$\scriptstyle\sum_{k=1}^{n} k$ - `\scriptstyle\sum_{k=1}^{n} k`
+
+$\scriptscriptstyle\sum_{k=1}^{n} k$ - `\scriptscriptstyle\sum_{k=1}^{n} k`
+
