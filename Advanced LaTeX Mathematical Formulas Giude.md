@@ -180,5 +180,44 @@ $$
 
 ```latex
 f(x) = \begin{cases}
-x^2, 
+x^2, & x < o \\
+e^x, & x \ge 0
+\end{cases}
+```
+
+$$
+f(x) = \begin{cases}
+x^2, & x < o \\
+e^x, & x \ge 0
+\end{cases}
+$$
+
+With `mathtools` you get `\dcases` (display style) and `\cases*` {text second column}.
+
+## `gathered` for vertical centering
+
+```latex
+\begin{equation}
+\begin{gathered}
+a = b + c \\
+x = y
+\end{gathered}
+\end{equation}
+```
+
+$$
+\begin{equation}
+\begin{gathered}
+a = b + c \\
+x = y
+\end{gathered}
+\end{equation}
+$$
+
+# 5. Advanced Limits, Sums, and Integrals
+
+## Subscriptions under operators: `\substack`
+
+```latex
+
 ```
