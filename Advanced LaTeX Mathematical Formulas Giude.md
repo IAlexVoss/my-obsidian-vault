@@ -496,7 +496,9 @@ E = mc^2 \tag{★}
 \end{equation}
 $$
 
-# 10. Advanced Fractions fractions
+# 10. Advanced Fractions and Roots
+
+## `\cfrac` for continued fractions
 
 ```latex
 \cfrac{1}{1 + \cfrac{1}{2 + \cfrac{1}{3}}}
@@ -505,3 +507,19 @@ $$
 Example: ---
 
 $\cfrac{1}{1 + \cfrac{1}{2 + \cfrac{1}{3}}}$ - `\cfrac{1}{1 + \cfrac{1}{2 + \cfrac{1}{3}}}`
+
+## `\sfrac` for slanted fractions (package `xfrac` or `amsmath)
+
+```latex
+\sfrac{1}{2} \quad \text{(in text)}    % better than 1/2
+```
+
+Example: ---
+
+$\sfrac{1}{2} \quad \text{(in text)}$ - `\sfrac{1}{2} \quad \text{(in text)}`
+
+## Customising radicals
+
+```latex
+\sqrt[\beta]{x^2 + y^2}
+```
