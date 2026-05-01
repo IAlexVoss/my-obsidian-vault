@@ -129,5 +129,10 @@ y &= a^2 + b^2
 
 Example: ---
 
-$*\begin{align}
-x &= y + z \\$$
+$$
+\begin{align}
+x &= y + z \\
+y &= a^2 + b^2
+\end{align}
+$$
+
