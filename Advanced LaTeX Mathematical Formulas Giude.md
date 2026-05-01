@@ -221,3 +221,25 @@ $$
 ```latex
 \sum_{\substack{1\le i\le n \\ i\ne j}} a_{i}
 ```
+
+Example: ---
+
+$\sum_{\substack{1\le i\le n \\ i\ne j}} a_{i}$ - `\sum_{\substack{1\le i\le n \\ i\ne j}} a_{i}`
+
+## Multiple limits: `\sideset` (for things like primers on sums)
+
+```latex
+\sideset{}{'}\sum_{n=1}^\infty a_n    % a prime after the sum
+```
+
+Example: ---
+
+$\sideset{}{'}\sum_{n=1}^\infty a_n$ - `\sideset{}{'}\sum_{n=1}^\infty a_n`
+
+## Over - and under-scripts on any symbol: `\overset`, `\underset`
+
+```latex
+\overset{*}{X} \quad \underset{\text{def}}{=}
+```
+
+$\overset{*}{X} \quad \underset{\text{def}}{=}$ - 
