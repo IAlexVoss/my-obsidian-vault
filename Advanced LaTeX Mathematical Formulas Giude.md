@@ -603,3 +603,65 @@ $$
 
 ## Multiline equations with column alignment
 
+```latex
+\begin{align*}
+u(x) &= \int_a^b f(t) \, dt \\
+     &= \bigl[ F(t) \bigr]_{t=a}^{t=b} \\
+     &= F(b) - F(a).
+\end{align*}
+```
+
+Example: ---
+
+$$
+\begin{align*}
+u(x) &= \int_a^b f(t) \, dt \\
+     &= \bigl[ F(t) \bigr]_{t=a}^{t=b} \\
+     &= F(b) - F(a).
+\end{align*}
+$$
+
+## Integral with a long domain (using `\mathclap`)
+
+```latex
+\int_{\mathclap{1\le i\le n}} \prod_{\mathclap{1\le j\le m}} x_{ij} \, d\mu
+```
+
+Example: ---
+
+$\int_{\mathclap{1\le i\le n}} \prod_{\mathclap{1\le j\le m}} x_{ij} \, d\mu$
+
+## Framed equation (package `empheq`)
+
+```latex
+\usepackage{empheq}
+...
+\begin{empheq}[box=\fbox]{align}
+a &= b \\
+c &= d
+\end{empheq}
+```
+
+Example: ---
+
+$$
+\usepackage{empheq}
+...
+\begin{empheq}[box=\fbox]{align}
+a &= b \\
+c &= d
+\end{empheq}
+$$
+
+# 13. Debugging and Tips
+
+- **Unexpected spaces?** Remember that spaces in math mode are ignored; use , etc.
+    
+- **Too big delimiters?** Avoid `\left \right` when unnecessary; use `\bigl` etc.
+    
+- **Missing $ inserted?** You forgot to enter math mode.
+    
+- **Double subscript error:** `x_y_z` → write `x_{y_z}`.
+    
+- **Package conflict?** Do **not** load `amsmath` and `mathtools`? Actually `mathtools` loads `amsmath`, so load only `mathtools`.
+
