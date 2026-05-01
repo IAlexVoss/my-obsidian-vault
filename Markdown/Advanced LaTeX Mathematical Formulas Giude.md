@@ -656,12 +656,16 @@ $$
 # 13. Debugging and Tips
 
 - **Unexpected spaces?** Remember that spaces in math mode are ignored; use , etc.
-    
 - **Too big delimiters?** Avoid `\left \right` when unnecessary; use `\bigl` etc.
-    
 - **Missing $ inserted?** You forgot to enter math mode.
-    
 - **Double subscript error:** `x_y_z` → write `x_{y_z}`.
-    
 - **Package conflict?** Do **not** load `amsmath` and `mathtools`? Actually `mathtools` loads `amsmath`, so load only `mathtools`.
 
+# 14. Further Reading
+
+- _Math mode_ by Herbert Voß (comprehensive PDF)
+- `amsmath` user guide (texdoc amsmath)
+- `mathtools` documentation
+- `detexify` (website) – draw a symbol and find its LaTeX command
+
+Now you are ready to write professional, complex mathematical formulas in LaTeX. Happy typesetting!
