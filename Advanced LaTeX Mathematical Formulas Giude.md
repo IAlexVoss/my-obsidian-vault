@@ -99,4 +99,4 @@ Use `\bigl`, `\Bigl`, `\biggl`, `\Biggl` (and `\bigr` etc.) for better control:
 ```
 
 
-## Mu
+## Multi-line Equations
