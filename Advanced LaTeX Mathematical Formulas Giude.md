@@ -136,3 +136,12 @@ y &= a^2 + b^2
 \end{align}
 $$
 
+Remove numbers with `\nonumber` or use `align*`.
+
+Align at multiple points:
+
+```latex
+\begin{align}
+x &= y       &  a &= b + c \\
+z &= w + 1 
+```
