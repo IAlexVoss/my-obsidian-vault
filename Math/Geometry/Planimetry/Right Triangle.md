@@ -10,4 +10,5 @@ Key facts:
 	- $sin\,α = \cfrac{opposite}{hypotenuse}$
 	- $cos\,α = \cfrac{adjacent}{hypotenuse}$
 	- $tan\,α = \cfrac{opposite}{adjacent}$
+	- $ctg\,α = \cfrac{adjacent}{opposite}$
 - 
