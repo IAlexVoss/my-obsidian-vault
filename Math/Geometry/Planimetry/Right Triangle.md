@@ -11,4 +11,7 @@ Key facts:
 	- $cos\,α = \cfrac{adjacent}{hypotenuse}$
 	- $tan\,α = \cfrac{opposite}{adjacent}$
 	- $ctg\,α = \cfrac{adjacent}{opposite}$
-- 
+- Special angles:
+	- $30^∘$, $45^∘$, $60^∘$ (memorize values)
+	- Leg opposite $30^∘$ -> half hypotenuse.
+- Circumradius: $R=\cfrac{c}{2}$ - (midpoint )
