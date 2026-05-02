@@ -14,4 +14,7 @@ Key facts:
 - Special angles:
 	- $30^∘$, $45^∘$, $60^∘$ (memorize values)
 	- Leg opposite $30^∘$ -> half hypotenuse.
-- Circumradius: $R=\cfrac{c}{2}$ - (midpoint )
+- Circumradius: $R=\cfrac{c}{2}$ - (midpoint of hypotenuse is center)
+- Inradius: $r=\cfrac{a+b-c}{2}$
+
+Paint:
