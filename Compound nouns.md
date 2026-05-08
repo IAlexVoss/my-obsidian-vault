@@ -121,4 +121,17 @@ Here are some examples:
 | :---------- | ------------------------------ | ----------------------- |
 | teaspoonful | 3 teaspoonsful                 | 3 teaspoonfuls of sugar |
 | truckful    | 5 trucksful of sand            | 5 truckfuls of sand     |
-| bucketful   | 2 buvke                        |                         |
+| bucketful   | 2 bucketsful of water          | 2 bucketfuls of water   |
+| cupful      | 4 cupsful of rice              | 4 cupfuls of rice       |
+
+Some compound nouns have obvious base word and you may need to consult a dictionary to find the plural:
+
+> higher-ups
+> also-runs
+> go-betweens
+> has-beens
+> good-for-nothings
+> grown-ups
+
+# Note
+
