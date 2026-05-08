@@ -147,4 +147,8 @@ Look at these examples:
 
 | long plural form becomes --> | plural compound noun [noun + noun] |
 | :--------------------------- | :--------------------------------- |
-|                              |                                    |
+| 100 trees with apples        | 100 **apple trees**                |
+| 1000 cables for telephones   | 1000 **telephone cables**          |
+| 20 boxes for tools           | 20 **tool boxes**                  |
+| 10 stops for buses           | 10 **bus stops**                   |
+| 4000 wheels for cars         | 4000 **car wheels**                |
