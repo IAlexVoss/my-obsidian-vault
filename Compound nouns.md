@@ -97,11 +97,18 @@ In general we make the plural of a compound noun by adding -s to the "base word"
 
 Look at these examples:
 
-| singular                 | plural                         |
-| :----------------------- | :----------------------------- |
-| a tennis shoe            | three **tennis shoes**         |
-| one assistant headmaster | five assistant **headmasters** |
-| the serjeant major       | some **serjeants major**       |
-| a mother-in-law          | two **mothers-in-law**         |
-| an assistant secretary   |                                |
+| singular                        | plural                                   |
+| :------------------------------ | :--------------------------------------- |
+| a tennis shoe                   | three **tennis shoes**                   |
+| one assistant headmaster        | five assistant **headmasters**           |
+| the serjeant major              | some **serjeants major**                 |
+| a mother-in-law                 | two **mothers-in-law**                   |
+| an assistant secretary of state | three assistant **secretaries of state** |
+| my toothbrush                   | our **toothbrushes**                     |
+| a woman-doctor                  | four **women doctors**                   |
+| a doctor of philosophy          | two **doctors of philosophy**            |
+| a passerby, a passer-by         | two **passersby**, two **passers-by**    |
 
+Note: that there is some variation with words like spoonful or truckful.
+
+The old style was to say spoonsful or trucksful for the plural. Today it is more usual to say spoonfuls
