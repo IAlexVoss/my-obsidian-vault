@@ -89,4 +89,19 @@ In compound nouns, the **stress** usually falls on **the first syllable**:
 
 #### **verb + adverb** or **adverb + verb**
 
-> breakdown, outbreak, outcome, cutback, drive-in, drop-out, feedback, flyover, hold-up, hangover, outlay, outlet, inlet, makeup, output, 
+> breakdown, outbreak, outcome, cutback, drive-in, drop-out, feedback, flyover, hold-up, hangover, outlay, outlet, inlet, makeup, output, set-back, stand-in, takeaway, walkover.
+
+# Plural
+
+In general we make the plural of a compound noun by adding -s to the "base word" (the most "significant" word).
+
+Look at these examples:
+
+| singular                 | plural                         |
+| :----------------------- | :----------------------------- |
+| a tennis shoe            | three **tennis shoes**         |
+| one assistant headmaster | five assistant **headmasters** |
+| the serjeant major       | some **serjeants major**       |
+| a mother-in-law          | two **mothers-in-law**         |
+| an assistant secretary   |                                |
+
