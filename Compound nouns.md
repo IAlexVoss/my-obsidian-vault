@@ -135,3 +135,4 @@ Some compound nouns have obvious base word and you may need to consult a diction
 
 # Note
 
+Compound nouns made of [noun + noun]
