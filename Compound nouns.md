@@ -76,4 +76,4 @@ Compound nouns often have a meaning that is different from the two separate word
 
 Compound nouns tend to have more stress on the first word.
 
-**Stress** is **important** in **pronunciation** as it distinguishes between a compound noun (e.g. green )
+**Stress** is **important** in **pronunciation** as it distinguishes between a compound noun (e.g. **greenhouse**) and an adjective with a noun
