@@ -111,4 +111,14 @@ Look at these examples:
 
 Note: that there is some variation with words like spoonful or truckful.
 
-The old style was to say spoonsful or trucksful for the plural. Today it is more usual to say spoonfuls
+The old style was to say spoonsful or trucksful for the plural. Today it is more usual to say spoonfuls or truckfuls.
+
+Both the old style (spoonsful) and the new style (spoonfuls) are normally acceptable, but you should be consist in your choice.
+
+Here are some examples:
+
+|             | old style plural (very formal) | new style plural        |
+| :---------- | ------------------------------ | ----------------------- |
+| teaspoonful | 3 teaspoonsful                 | 3 teaspoonfuls of sugar |
+| truckful    | 5 trucksful of sand            | 5 truckfuls of sand     |
+| bucketful   | 2 buvke                        |                         |
