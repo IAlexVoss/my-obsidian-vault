@@ -137,4 +137,13 @@ Some compound nouns have obvious base word and you may need to consult a diction
 
 Compound nouns made of [noun + noun] the first noun is like an adjective and therefore does not actually take an -s.
 
-A tree that has apples has many apples, but we say an **apple tree**, **matchbox** ~~not matchbox~~ **toothbrush** ~~not teethbrush~~
+A tree that has apples has many apples, but we say an **apple tree**, **matchbox** ~~not matchbox~~ **toothbrush** ~~not teethbrush~~.
+
+With compound nouns made of [noun + noun] the second noun takes an -s for plural.
+
+The first noun gets like an adjective and as you know, adjectives in English are invariable.
+
+Look at these examples:
+
+| long plural form becomes -->| plural compound noun [noun + noun] |
+| :--- | :- |
