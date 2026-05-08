@@ -76,4 +76,17 @@ Compound nouns often have a meaning that is different from the two separate word
 
 Compound nouns tend to have more stress on the first word.
 
-**Stress** is **important** in **pronunciation** as it distinguishes between a compound noun (e.g. **greenhouse**) and an adjective with a noun (e.g. **green house**)
+**Stress** is **important** in **pronunciation** as it distinguishes between a compound noun (e.g. **greenhouse**) and an adjective with a noun (e.g. **green house**).
+
+In compound nouns, the **stress** usually falls on **the first syllable**:
+
+> a **'greenhouse** = place where we grow plants
+> a **green house'** = house painted green
+> a **'bluebird** = type of bird
+> a **blue 'bird** = any bird with blue features
+
+#### Many common compound nouns are formed from phrasal verbs:
+
+#### **verb + adverb** or **adverb + verb**
+
+> breakdown, outbreak, outcome, cutback, drive-in, drop-out, feedback, flyover, hold-up, hangover, outlay, outlet, inlet, makeup, output, 
