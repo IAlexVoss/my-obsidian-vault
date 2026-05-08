@@ -70,3 +70,10 @@ The two parts may be:
 	3. upturn
 	4. input
 
+Compound nouns often have a meaning that is different from the two separate words.
+
+# Pronunciation:
+
+Compound nouns tend to have more stress on the first word.
+
+**Stress** is **important** in **pronunciation** as it distinguishes between a compound noun (e.g. green )
