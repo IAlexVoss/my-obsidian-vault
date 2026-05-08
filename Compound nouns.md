@@ -145,5 +145,6 @@ The first noun gets like an adjective and as you know, adjectives in English are
 
 Look at these examples:
 
-| long plural form becomes -->| plural compound noun [noun + noun] |
-| :--- | :- |
+| long plural form becomes --> | plural compound noun [noun + noun] |
+| :--------------------------- | :--------------------------------- |
+|                              |                                    |
