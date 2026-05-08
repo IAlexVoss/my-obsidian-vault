@@ -19,4 +19,24 @@ The **second part** identifies the object or person in question (**man**, **frie
 ## The two parts may be written in a number of ways:
 
 1. as one word: **policeman**, **boyfriend**
-2. as two words joined with a hypen
+2. as two words joined with a hyphen: **dining-table**
+3. as two separate words: **fish** **tank**
+
+#### There are no clear rules about this - so write the common compound nouns that you know well as one word, and the others as two words.
+
+The two parts may be:
+
+1. **noun + noun**:
+	1. bedroom
+	2. water tank
+	3. motorcycle
+	4. printer cartridge
+
+2. **noun + verb**:
+	1. rainfall
+	2. haircut
+	3. train-spotting
+
+3. **noun + adverb**:
+	1. hanger-on
+	2. 
