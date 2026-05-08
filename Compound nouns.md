@@ -39,4 +39,34 @@ The two parts may be:
 
 3. **noun + adverb**:
 	1. hanger-on
-	2. 
+	2. passer-by
+
+4. **verb + noun**:
+	1. washing machine
+	2. driving license
+	3. swimming pool
+
+5. **verb + adverb**:
+	1. lookout
+	2. take-off
+	3. drawback
+
+6. **adjective + noun**:
+	1. greenhouse
+	2. software
+	3. redhead
+
+7. **adjective + verb**:
+	1. dry-cleaning
+	2. public speaking
+
+8. **adverb + noun**:
+	1. onlooker
+	2. bystander
+
+9. **adverb + verb**:
+	1. output
+	2. overthrow
+	3. upturn
+	4. input
+
