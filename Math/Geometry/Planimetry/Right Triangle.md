@@ -18,3 +18,6 @@ Key facts:
 - Inradius: $r=\cfrac{a+b-c}{2}$
 
 Paint:
+
+---
+
