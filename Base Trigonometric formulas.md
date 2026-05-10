@@ -18,3 +18,7 @@ $tg(α - β) = \cfrac{tgα-tgβ}{1 + tgαtgβ}$ ;
 
 $ctg(α + β) = \cfrac{ctgαctgβ - 1}{ctgα + ctgβ}$ ;
 $ctg(α + β) = \cfrac{ctgαctgβ + 1}{ctgα - ctgβ}$ ;
+
+# Reduction formulas:
+
+## 1. Reduction formulas with a reference point 
