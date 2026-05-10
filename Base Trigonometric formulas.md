@@ -17,8 +17,12 @@ $tg(α + β) = \cfrac{tgα+tgβ}{1 - tgαtgβ}$ ;
 $tg(α - β) = \cfrac{tgα-tgβ}{1 + tgαtgβ}$ ;
 
 $ctg(α + β) = \cfrac{ctgαctgβ - 1}{ctgα + ctgβ}$ ;
-$ctg(α + β) = \cfrac{ctgαctgβ + 1}{ctgα - ctgβ}$ ;
+$ctg(α + β) = \cfrac{ctg\:α\:ctgβ + 1}{ctgα - ctgβ}$ ;
 
 # Reduction formulas:
 
 ## 1. Reduction formulas with a reference point $\cfrac{π}{2}$: 90
+$sin(\cfrac{π}{2} - α) = cos\:α$ ;
+$cos(\cfrac{π}{2} - α) = sin\:α$ ;
+$tg(\cfrac{π}{2} - α) = ctg\:α$ ;
+$ctg(\cfrac{π}{2} - α) = tg\:α$ ;
