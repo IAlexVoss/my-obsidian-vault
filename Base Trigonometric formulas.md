@@ -21,4 +21,4 @@ $ctg(α + β) = \cfrac{ctgαctgβ + 1}{ctgα - ctgβ}$ ;
 
 # Reduction formulas:
 
-## 1. Reduction formulas with a reference point 
+## 1. Reduction formulas with a reference point $\cfrac{π}{2}$: 90
