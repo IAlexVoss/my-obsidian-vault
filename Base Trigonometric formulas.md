@@ -9,7 +9,12 @@ $1 + ctg^2α = \cfrac{1}{sin^2α}$;
 
 $sin(α + β) = sinαcosβ + cosαsinβ$ ;
 $sin(α - β) = sinαcosβ - cosαsinβ$ ;
+
 $cos(α + β) = cosαcosβ - sinαsinβ$ ;
 $cos(α - β) = cosαcosβ + sinαsinβ$ ;
+
 $tg(α + β) = \cfrac{tgα+tgβ}{1 - tgαtgβ}$ ;
 $tg(α - β) = \cfrac{tgα-tgβ}{1 + tgαtgβ}$ ;
+
+$ctg(α + β) = \cfrac{ctgαctgβ - 1}{ctgα + ctgβ}$ ;
+$ctg(α + β) = \cfrac{ctgαctgβ + 1}{ctgα - ctgβ}$ ;
