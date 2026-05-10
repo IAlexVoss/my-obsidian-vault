@@ -7,17 +7,17 @@ $1 + ctg^2α = \cfrac{1}{sin^2α}$;
 
 # Addition formulas:
 
-$sin(α + β) = sinαcosβ + cosαsinβ$ ;
-$sin(α - β) = sinαcosβ - cosαsinβ$ ;
+$sin(α + β) = sin\:α\:cos\:β + cos\:α\:sin\:β$ ;
+$sin(α - β) = sin\:α\:cos\:β - cos\:α\:sin\:β$ ;
 
-$cos(α + β) = cosαcosβ - sinαsinβ$ ;
-$cos(α - β) = cosαcosβ + sinαsinβ$ ;
+$cos(α + β) = cos\:α\:cos\:β - sin\:α\:sin\:β$ ;
+$cos(α - β) = cos\:α\:cos\:β + sin\:α\:sin\:β$ ;
 
-$tg(α + β) = \cfrac{tgα+tgβ}{1 - tgαtgβ}$ ;
-$tg(α - β) = \cfrac{tgα-tgβ}{1 + tgαtgβ}$ ;
+$tg(α + β) = \cfrac{tg\:α+tg\:β}{1 - tg\:α\:tg\:β}$ ;
+$tg(α - β) = \cfrac{tg\:α-tg\:β}{1 + tg\:α\:tg\:β}$ ;
 
-$ctg(α + β) = \cfrac{ctgαctgβ - 1}{ctgα + ctgβ}$ ;
-$ctg(α + β) = \cfrac{ctg\:α\:ctgβ + 1}{ctgα - ctgβ}$ ;
+$ctg(α + β) = \cfrac{ctg\:α\:ctg\:β - 1}{ctg\:α + ctg\:β}$ ;
+$ctg(α + β) = \cfrac{ctg\:α\:ctg\:β + 1}{ctg\:α - ctg\:β}$ ;
 
 # Reduction formulas:
 
