@@ -78,4 +78,4 @@ $cos\:2α = 2cos^2 α - 1$ ;
 $cos\:2α = 1 - 2sin^2 α$ ;
 
 $tg\:2α = \cfrac{2tgα}{1-tg^2 α}$ ;
-$ctg\:2α = \cfrac{ctg^2 α - 1}{}$
+$ctg\:2α = \cfrac{ctg^2 α - 1}{2ctgα}$ ;
