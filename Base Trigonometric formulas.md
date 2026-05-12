@@ -21,12 +21,13 @@ $ctg(α + β) = \cfrac{ctg\:α\:ctg\:β + 1}{ctg\:α - ctg\:β}$ ;
 
 # Reduction formulas:
 
-## 1. Reduction formulas with a reference point $\cfrac{π}{2}$: 90
+## 1. Reduction formulas with a reference point $\cfrac{π}{2}$ : 90
 
 $sin(\cfrac{π}{2} - α) = cos\:α$ ;
 $cos(\cfrac{π}{2} - α) = sin\:α$ ;
 $tg(\cfrac{π}{2} - α) = ctg\:α$ ;
 $ctg(\cfrac{π}{2} - α) = tg\:α$ ;
+
 $sin(\cfrac{π}{2} + α) = cos\:α$ ;
 $cos(\cfrac{π}{2} + α) = -sin\:α$ ;
 $tg(\cfrac{π}{2} + α) = -ctg\:α$ ;
@@ -38,9 +39,25 @@ $sin(π - α) = sin\:α$ ;
 $cos(π - α) = -cos\:α$ ;
 $tg(π - α) = -tg\:α$ ;
 $ctg(π - α) = -ctg\:α$ ;
+
 $sin(π + α) = -sin\:α$ ;
 $cos(π + α) = -cos\:α$ ;
 $tg(π + α) = tg\:α$ ;
 $ctg(π + α) = ctg\:α$ ;
 
-## 3. Reduction formulas with reference 
+## 3. Reduction formulas with reference point $\cfrac{3π}{2}$ : 270
+
+$sin(\cfrac{3π}{2} - α) = -cos\:α$ ;
+$cos(\cfrac{3π}{2} - α) = -sin\:α$ ;
+$tg(\cfrac{3π}{2} - α) = ctg\:α$ ;
+$ctg(\cfrac{3π}{2} - α) = tg\:α$ ;
+
+$sin(\cfrac{3π}{2} + α) = -cos\:α$ ;
+$cos(\cfrac{3π}{2} + α) = sin\:α$ ;
+$tg(\cfrac{3π}{2} + α) = -ctg\:α$ ;
+$ctg(\cfrac{3π}{2} + α) = -tg\:α$ ;
+
+## 4. Reduction formulas with reference point $2π$ : 360
+
+$sin(2π - α) = -sin\:α$ ;
+$ctg(2π - α) = -sin\:α$ ;
