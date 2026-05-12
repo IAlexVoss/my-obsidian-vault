@@ -80,4 +80,12 @@ $cos\:2α = 1 - 2sin^2 α$ ;
 $tg\:2α = \cfrac{2tgα}{1-tg^2 α}$ ;
 $ctg\:2α = \cfrac{ctg^2 α - 1}{2ctgα}$ ;
 
-# Third angle formulas
+# Third angle formulas:
+
+$sin\:3α = 3sin\:α - 4sin^3α$ ;
+$cos\:3α = 4cos^3 α - 3cos\:α$ ;
+$tg\:3α = \cfrac{3tg\:α - tg^3 α}{1 - 3tg^2 α}$ ;
+
+# Formulas for reducing exponents:
+
+$cos^2 α = \cfrac{1 + cos\:2α}$
