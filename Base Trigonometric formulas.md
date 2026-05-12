@@ -109,5 +109,8 @@ $ctg\:α = \cfrac{1 - tg^2\:\cfrac{α}{2}}{2tg\:\cfrac{α}{2}}$ ;
 $sin\:α + sin\:β = 2sin\:\cfrac{α + β}{2}\:cos\:\cfrac{α - β}{2}$ ;
 $sin\:α - sin\:β = 2sin\:\cfrac{α - β}{2}\:cos\:\cfrac{α + β}{2}$ ;
 
-$cos\:α + sin\:β = 2sin\:\cfrac{α + β}{2}\:cos\:\cfrac{α - β}{2}$ ;
-$sin\:α - sin\:β = 2sin\:\cfrac{α - β}{2}\:cos\:\cfrac{α + β}{2}$ ;
+$cos\:α + cos\:β = 2cos\:\cfrac{α + β}{2}\:cos\:\cfrac{α - β}{2}$ ;
+$cos\:α - cos\:β = 2sin\:\cfrac{α + β}{2}\:sin\:\cfrac{β - α}{2}$ ;
+
+$tg\:α + tg\:β = \cfrac{sin(α + β)}{cos\:α\:cos\:β}$ ;
+$tg\:α - tg\:β = \cfrac{sin(α - β)}{cos\:α\:cos\:β}$ ;
