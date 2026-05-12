@@ -60,4 +60,15 @@ $ctg(\cfrac{3π}{2} + α) = -tg\:α$ ;
 ## 4. Reduction formulas with reference point $2π$ : 360
 
 $sin(2π - α) = -sin\:α$ ;
-$ctg(2π - α) = -sin\:α$ ;
+$cos(2π - α) = cos\:α$ ;
+$tg(2π - α) = -tg\:α$ ;
+$ctg(2π - α) = -ctg\:α$ ;
+
+$sin(2π + α) = sin\:α$ ;
+$cos(2π + α) = cos\:α$ ;
+$tg(2π + α) = tg\:α$ ;
+$ctg(2π + α) = ctg\:α$ ;
+
+# Double angle formulas:
+
+$sin2$
