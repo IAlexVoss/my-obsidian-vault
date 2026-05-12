@@ -114,3 +114,13 @@ $cos\:α - cos\:β = 2sin\:\cfrac{α + β}{2}\:sin\:\cfrac{β - α}{2}$ ;
 
 $tg\:α + tg\:β = \cfrac{sin(α + β)}{cos\:α\:cos\:β}$ ;
 $tg\:α - tg\:β = \cfrac{sin(α - β)}{cos\:α\:cos\:β}$ ;
+
+$ctg\:α + ctg\:β = \cfrac{sin(α + β)}{sin\:α\:sin\:β}$ ;
+$ctg\:α - ctg\:β = \cfrac{sin(β - α)}{sin\:α\:sin\:β}$ ;
+
+$tg\:α + ctg\:β = \cfrac{cos(α - β)}{cos\:α\:sin\:β}$ ;
+$ctg\:α - tg\:β = \cfrac{cos(α + β)}{sin\:α\:cos\:β}$ ;
+
+$2cos\:α\:cos\:β = cos(α + β) + cos(α - β)$ ;
+$2sin\:α\:sin\:β = cos(α - β) - cos(α + β)$ ;
+$2sin\:α\:cos\:β = sin(α + β) + sin(α - β)$ ;
