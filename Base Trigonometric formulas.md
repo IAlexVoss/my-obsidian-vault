@@ -106,3 +106,8 @@ $ctg\:α = \cfrac{1 - tg^2\:\cfrac{α}{2}}{2tg\:\cfrac{α}{2}}$ ;
 
 # Sums and products of trigonometric functions:
 
+$sin\:α + sin\:β = 2sin\:\cfrac{α + β}{2}\:cos\:\cfrac{α - β}{2}$ ;
+$sin\:α - sin\:β = 2sin\:\cfrac{α - β}{2}\:cos\:\cfrac{α + β}{2}$ ;
+
+$cos\:α + sin\:β = 2sin\:\cfrac{α + β}{2}\:cos\:\cfrac{α - β}{2}$ ;
+$sin\:α - sin\:β = 2sin\:\cfrac{α - β}{2}\:cos\:\cfrac{α + β}{2}$ ;
