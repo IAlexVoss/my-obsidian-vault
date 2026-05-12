@@ -99,4 +99,10 @@ $tg\:\cfrac{α}{2} = \cfrac{sin\:α}{1 + cos\:α}$ ;
 
 # Universal substitution:
 
-$sin\:α = \cfrac{2tg\:\cfrac}{}$
+$sin\:α = \cfrac{2tg\:\cfrac{α}{2}}{1 + tg^2\:\cfrac{α}{2}}$ ;
+$cos\:α = \cfrac{1 - tg^2\:\cfrac{α}{2}}{1 + tg^2\:\cfrac{α}{2}}$ ;
+$tg\:α = \cfrac{2tg\:\cfrac{α}{2}}{1 - tg^2\:\cfrac{α}{2}}$ ;
+$ctg\:α = \cfrac{1 - tg^2\:\cfrac{α}{2}}{2tg\:\cfrac{α}{2}}$ ;
+
+# Sums and products of trigonometric functions:
+
