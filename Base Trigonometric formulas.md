@@ -88,4 +88,15 @@ $tg\:3α = \cfrac{3tg\:α - tg^3 α}{1 - 3tg^2 α}$ ;
 
 # Formulas for reducing exponents:
 
-$cos^2 α = \cfrac{1 + cos\:2α}$
+$cos^2 α = \cfrac{1 + cos\:2α}{2}$ ;
+$sin^2 α = \cfrac{1 - cos\:2α}{2}$ ;
+
+# Formulas for the tangent of a half-angle:
+
+$tg^2\:\cfrac{α}{2} = \cfrac{1 - cos\:α}{1 + cos\:α}$ ;
+$tg\:\cfrac{α}{2} = \cfrac{1 - cos\:α}{sin\:α}$ ;
+$tg\:\cfrac{α}{2} = \cfrac{sin\:α}{1 + cos\:α}$ ;
+
+# Universal substitution:
+
+$sin\:α = \cfrac{2tg\:\cfrac}{}$
