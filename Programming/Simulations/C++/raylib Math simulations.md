@@ -12,4 +12,13 @@ vcpkg install raylib
 
 Compilator: g++/clang++ (standard C++17).
 
-In CMakeLists.txt for raylib 
+In CMakeLists.txt for raylib need:
+```cmake
+cmake_minimum_required(VERSION 3.11)
+project(SimCanvas)
+
+find_package(raylib REQUIRED)
+add_executable(sim main.cpp)
+target_link_libraries(sim raylib)
+```
+
