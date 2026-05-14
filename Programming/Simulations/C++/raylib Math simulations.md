@@ -22,3 +22,4 @@ add_executable(sim main.cpp)
 target_link_libraries(sim raylib)
 ```
 
+Download clang++ compilator for C++ by the following link: 
