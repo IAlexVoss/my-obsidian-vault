@@ -29,4 +29,13 @@ example:
 
 ## all + noun (without the) to refer to things/people in general
 
-When talking about "all things of a certain kind" to refer to things/people
+When talking about "all things of a certain kind" to refer to things/people in general, only "all things", ~~not all of things~~ is possible e.g.
+
+> **All humans** are animals    (correct)
+> ~~All of humans are animals~~     (wrong)
+> **All children** need love       (correct)
+> ~~All of children~~ need love        (wrong)
+> **All cheese** contains fat      (correct)
+> ~~All of cheese contains fat~~      (wrong)
+> **All lights** were out             (correct)
+> ~~All of lights were out~~         ()
