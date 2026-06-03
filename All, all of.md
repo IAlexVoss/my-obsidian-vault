@@ -31,11 +31,20 @@ example:
 
 When talking about "all things of a certain kind" to refer to things/people in general, only "all things", ~~not all of things~~ is possible e.g.
 
-> **All humans** are animals    (correct)
+> **All humans** are animals         (correct)
 > ~~All of humans are animals~~     (wrong)
-> **All children** need love       (correct)
-> ~~All of children~~ need love        (wrong)
-> **All cheese** contains fat      (correct)
+> **All children** need love           (correct)
+> ~~All of children~~ need love       (wrong)
+> **All cheese** contains fat          (correct)
 > ~~All of cheese contains fat~~      (wrong)
-> **All lights** were out             (correct)
-> ~~All of lights were out~~         ()
+> **All lights** were out                (correct)
+> ~~All of lights were out~~             (wrong)
+
+## When  we talk about the total amount of a substance, such as water, we don't use "of":
+
+> **All water** on Earth will evaporate in about a billion years. correct
+> ~~All of water on ...~~ wrong
+
+# All of:
+
+We use **all of** before personal pronouns (**us**, **them**), demonstrative pronouns (**this**, **that**, **these**, **those**) and relative pronouns (whom, which**)
