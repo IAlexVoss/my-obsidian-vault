@@ -47,4 +47,19 @@ When talking about "all things of a certain kind" to refer to things/people in g
 
 # All of:
 
-We use **all of** before personal pronouns (**us**, **them**), demonstrative pronouns (**this**, **that**, **these**, **those**) and relative pronouns (whom, which**)
+## We use **all of** before personal pronouns (**us**, **them**), demonstrative pronouns (**this**, **that**, **these**, **those**) and relative pronouns (**whom**, **which**):
+
+**All of (without the) + object form**
+
+> **All of us** love music    correct
+> ~~All us love music~~         wrong
+> ~~All of the us love music~~   wrong
+> I have invited **all of them**   correct
+> ~~I have invited all them~~    wrong
+> ~~I have invited all of the them~~   wrong
+
+## With demonstratives (This, That, These, Those) we can say **all of** or all without of:
+
+> All (of) this has to go out into the rubbish bin
+
+We often use "of" after "all" in definite noun phrases (i.e. )
