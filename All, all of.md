@@ -62,4 +62,15 @@ When talking about "all things of a certain kind" to refer to things/people in g
 
 > All (of) this has to go out into the rubbish bin
 
-We often use "of" after "all" in definite noun phrases (i.e. )
+We often use "of" after "all" in definite noun phrases (i.e. before **the**, **possessives** and **demonstratives**), but it is not obligatory
+
+> All (of) the workers were given a pay-rise at the end of the year.
+> I gave all (of) my old books to my sister when she went to university
+> What shall we do with all (of) this cardboard? Throw it out?
+
+Note: the word "humanity" seems break this rule, and both "all humanity" and "all of humanity" are in use:
+
+> All of humanity was at risk of being wiped out by the disaster
+> All humanity was at risk of being wiped by the disaster
+
+## All 
