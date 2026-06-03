@@ -14,4 +14,11 @@ It is used mostly before plural and uncountable nouns
 
 After an **uncountable** noun, we use a singular verb:
 
-> 
+> All tickets **cost** 25 pounds. (plural noun "**tickets**" => plural verb "cost").
+> All cheese **contains** fat. (Uncountable noun "**cheese**" => singular verb "contains").
+> All my friends **are** away at university. ("**friend**" is a countable noun).
+> All **information** about the new product **is** confidential (**information** is an uncountable noun).
+
+## All + noun is not normally used as the subject of a negative verb
+
+WE more often use the structure **no**
