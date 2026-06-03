@@ -75,3 +75,6 @@ Note: the word "humanity" seems break this rule, and both "all humanity" and "al
 
 ## All + the and All of + the:
 
+We use **all + the/my/etc. + noun** to refer to particular people or things.
+
+Before a noun with a determiner
