@@ -77,4 +77,12 @@ Note: the word "humanity" seems break this rule, and both "all humanity" and "al
 
 We use **all + the/my/etc. + noun** to refer to particular people or things.
 
-Before a noun with a determiner
+Before a noun with a determiner (the, my, this, etc.), **all** and **all of** are both possible.
+
+> **All the** lights were out   (plural count noun).
+> **All of the** lights were out   (plural count noun)
+> I have invited **all my** friends to my birthday party   (plural count noun)
+> I have invited **all of my** friends to my birthday party   (plural count noun)
+> I used **all of the** paper in my notebook to write my essay   (non-countable noun)
+> I used **all the** paper in my notebook to write my essay   (non-countable noun)
+
