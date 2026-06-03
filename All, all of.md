@@ -73,4 +73,5 @@ Note: the word "humanity" seems break this rule, and both "all humanity" and "al
 > All of humanity was at risk of being wiped out by the disaster
 > All humanity was at risk of being wiped by the disaster
 
-## All 
+## All + the and All of + the:
+
