@@ -21,4 +21,12 @@ After an **uncountable** noun, we use a singular verb:
 
 ## All + noun is not normally used as the subject of a negative verb
 
-WE more often use the structure **no**
+WE more often use the structure **not all + noun + affirmative verb**
+
+example:
+
+> **Not all** birds can sign. (NOT ~~All birds cannot sign~~)
+
+## all + noun (without the) to refer to things/people in general
+
+When talking about "all things of a certain kind" to refer to things/people
