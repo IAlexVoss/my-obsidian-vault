@@ -73,7 +73,7 @@ Note: the word "humanity" seems break this rule, and both "all humanity" and "al
 > All of humanity was at risk of being wiped out by the disaster
 > All humanity was at risk of being wiped by the disaster
 
-## All + the and All of + the:
+## "All + the" & "All of + the":
 
 We use **all + the/my/etc. + noun** to refer to particular people or things.
 
@@ -86,3 +86,16 @@ Before a noun with a determiner (the, my, this, etc.), **all** and **all of** ar
 > I used **all of the** paper in my notebook to write my essay   (non-countable noun)
 > I used **all the** paper in my notebook to write my essay   (non-countable noun)
 
+## "All of the" + Ns (Plural noun):
+
+Use this pattern when you want to talk about specific nouns.
+
+## "All the" + Ns (Plural noun):
+
+This pattern is the casual from of the "all of the" + Ns pattern, where "of" is simply dropped to shorten the phrase
+
+# All with nouns and pronouns:
+
+## "All" can modify nouns and pronouns. We normally place it before the "noun/pronoun"
+
+When **"all"** 
