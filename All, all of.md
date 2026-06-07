@@ -111,4 +111,17 @@ The pronoun is in the object form:
 
 > I love you **all** ( = I love all of you ) 
 > Give my love to them **all** ( = Give my love to all of them )
-> 
+> I have mate you **all** something to eat ( = I have made all of you something to eat )
+
+## Note that **all** cannot be put after pronouns used as subject complements:
+
+> Is that all of them? (Not: ~~Is that them all?~~)
+
+# All meaning "completely" or "extremely":
+
+We can also use **all** as an adverb meaning "completely" or "extremely", especially in informal styles:
+
+> He lived all alone in an old cottage in the woods.
+> He came back all covered mud.
+> I lost a good friend, and all because of my stupidity.
+> Maggie got all upset when she found 
