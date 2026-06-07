@@ -98,4 +98,17 @@ This pattern is the casual from of the "all of the" + Ns pattern, where "of" is 
 
 ## "All" can modify nouns and pronouns. We normally place it before the "noun/pronoun"
 
-When **"all"** 
+When **"all"** refers to a personal pronoun which is the object in a clause, we can use **"pronoun + all"** or **"all + pronoun"**
+
+The pronoun is in the object form:
+
+> I have invited **all my friends**
+> **All of us** love music
+> I love **all of you**
+> **All of us** are going to the movies
+
+## We can put "all" after pronouns used as objects:
+
+> I love you **all** ( = I love all of you ) 
+> Give my love to them **all** ( = Give my love to all of them )
+> 
