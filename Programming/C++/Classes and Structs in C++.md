@@ -126,4 +126,24 @@ There's also a destructor (~Point()) that runs when the object is destroyed - us
 
 Since they're nearly identical, programmers follow conventions:
 
-* struct - for simple bundles of public data with
+* **struct** - for simple bundles of public data with little or no behavior (sometimes called "plain of data").
+	 example: a 3D coordinate {x, y, z};
+* **class** - for objects with behavior, encapsulation, and invariants to protect.
+	 example: a **BankAccount** that must never go negative
+
+Let's to watch a Full example:
+
+```cpp
+struct Color {
+	int red, green, blue;
+};
+
+class Temperature {
+private:
+	double celsius;
+	
+public:
+	Temperature (double c): celsius(c) {}
+	double to FAHrenheit() { return celsius * 9.0/5.0 + 32.0}
+};
+```
