@@ -2,4 +2,4 @@ C++ is non-object oriented language, but you can use it like the object-oriented
 
 # C++ terms:
 
-## [[Class and Struct in C++]]
+## [[Classes and Structs in C++]]
