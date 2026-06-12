@@ -33,7 +33,7 @@ d.y = 10;       // own member
 d.greet();      // inherited function
 ```
 
-## Inheritance Access Modes:
+## Inheritance Access Modes TEST!!!:
 
 test
 
