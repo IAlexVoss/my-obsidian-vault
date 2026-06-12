@@ -182,3 +182,7 @@ int main() {
 ## Summary:
 
 A **class**/**struct** groups **data** + **functions** into a custom type.
+
+The only technical difference is default access (class -> private, struct -> public)
+
+Use access specifiers
