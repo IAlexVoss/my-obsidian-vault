@@ -117,5 +117,13 @@ int main() {
 A cleaner, preferred way uses an initializer list:
 
 ```cpp
-Point(int startX, int strartY)
+Point(int startX, int startY) : x(startX), y(startY) {}
 ```
+
+There's also a destructor (~Point()) that runs when the object is destroyed - useful for cleanly like freeing memory
+
+## Then to Use Which (Convention):
+
+Since they're nearly identical, programmers follow conventions:
+
+* struct - for simple bundles of public data with
