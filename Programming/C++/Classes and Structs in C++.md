@@ -185,4 +185,4 @@ A **class**/**struct** groups **data** + **functions** into a custom type.
 
 The only technical difference is default access (class -> private, struct -> public)
 
-Use access specifiers
+Use access specifiers to control visibility, constructors to initialize objects and lean on class when you want encapsulationб struct for simple data bundles
