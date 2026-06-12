@@ -41,5 +41,32 @@ myDog.bark();          // call its function -> "Rex says woof!"
 In a **class**, members are **private by default**
 In a **struct**, members are **public by default**
 
+```cpp
+class MyClass {
+	int x;          // Private by default - can't access from outside
+};
 
+struct MyStruct {
+	int x;          // Public by default - accessible from outside
+}
+```
 
+That's it Everything else they are do is identical: both support inheritance, member functions, constructors, access specifiers, e.t.c.
+
+## Access Specifiers:
+
+> **public**       ->            anyone, from anywhere
+> **private**      ->            only the class's own member functions
+> **protected** ->            the class itself and its deriver (child) classes
+
+Example of access specifiers:
+
+```cpp
+class BankAccount {
+private:
+	double balance;        // hidden from outside
+
+public:
+	void deposit(double a)
+}
+```
