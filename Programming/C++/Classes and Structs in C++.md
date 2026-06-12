@@ -181,3 +181,4 @@ int main() {
 
 ## Summary:
 
+A **class**/**struct** groups **data** + **functions** into a custom type.
