@@ -147,3 +147,37 @@ public:
 	double to FAHrenheit() { return celsius * 9.0/5.0 + 32.0}
 };
 ```
+
+Add a complex Example:
+
+```cpp
+#include <iostream>
+#include <string>
+
+class Car {
+private:
+	std::string model;
+	int speed;
+	
+public:
+	Car (std::string m) : model(m), speed(0) {}    // Constructor
+	void accelerate(int amount) {
+		speed += amount;
+	}
+	
+	void display() {
+		std::cout << model << "is going" << speed << "km/h\n";
+	}
+};
+
+int main() {
+	Car myCar("Toyota");
+	myCar.accelerate(50);
+	myCar.accelerate(30);
+	myCar.display();
+	return 0;
+}
+```
+
+## Summary:
+
