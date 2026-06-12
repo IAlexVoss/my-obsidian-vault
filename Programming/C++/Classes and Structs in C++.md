@@ -67,6 +67,30 @@ private:
 	double balance;        // hidden from outside
 
 public:
-	void deposit(double a)
+	void deposit(double amount) {
+		balance += amount; // ok - inside the class
+	}
+	
+	double getBalance() {
+		return balance;
+	}
+};
+```
+
+```cpp
+int main() {
+	BankAccount acc;
+	
+	// acc.balance = 1_000_000      // Error: balance is private
+	
+	acc.Deposit(100);               // ok: public function
 }
 ```
+
+This is the principle of encapsulation - hide the internal data and expose a controlled inheritance.
+
+It's why, classes are typically preferred when you want to enforce rules about how data is used.
+
+## Constructors:
+
+A **constructor** is a special function that runs automatically when an object is created 
