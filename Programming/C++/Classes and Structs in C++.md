@@ -33,6 +33,13 @@ And then, you create objects (also called instances) from this blueprint:
 Dog myDog;             // create an object
 myDog.name = "Rex";    // set its data
 myDog.age = 3;         
-myDog.bark();          // call its 
+myDog.bark();          // call its function -> "Rex says woof!"
 ```
+
+## The one real Difference: Default Access:
+
+In a **class**, members are **private by default**
+In a **struct**, members are **public by default**
+
+
 
