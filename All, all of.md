@@ -124,4 +124,7 @@ We can also use **all** as an adverb meaning "completely" or "extremely", especi
 > He lived all alone in an old cottage in the woods.
 > He came back all covered mud.
 > I lost a good friend, and all because of my stupidity.
-> Maggie got all upset when she found 
+> Maggie got all upset when she found out the house had been sold.
+
+# Test yourself:
+
