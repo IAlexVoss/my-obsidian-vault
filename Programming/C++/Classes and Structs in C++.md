@@ -93,4 +93,29 @@ It's why, classes are typically preferred when you want to enforce rules about h
 
 ## Constructors:
 
-A **constructor** is a special function that runs automatically when an object is created 
+A **constructor** is a special function that runs automatically when an object is created.
+
+It's used to initialize the object.
+
+```cpp
+class Point {
+public:
+	int x, y;
+	
+	// Constructor
+	Point (int startX, int startY) {
+		x = startX;
+		y = startY;
+	}
+};
+
+int main() {
+	Point p(5, 10); // constructor runs: x = 5, y = 10
+}
+```
+
+A cleaner, preferred way uses an initializer list:
+
+```cpp
+Point(int startX, int strartY)
+```
