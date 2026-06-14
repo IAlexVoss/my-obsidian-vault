@@ -62,7 +62,24 @@ public: int open;
 
 class Derived : public Base {
 	void test() {
-		
+		// secret = 1;      // error
+		family = 2;         // ok
+		open = 3;           // ok
 	}
-}
+};
 ```
+
+## Forms of inheritance:
+
+### 1. Single inheritance:
+
+One base, one derived. The simplest form
+
+```cpp
+class Animal { /* ... */ };
+class Dog : Animal { /* ... */ };
+```
+
+### 2. Multilevel Inheritance:
+
+A chain - derived
