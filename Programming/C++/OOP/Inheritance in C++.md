@@ -107,5 +107,17 @@ One class inherits than several vases at once. ( C++ allow that; many languages 
 
 ```cpp
 class Camera { public: void takePhoto() {} };
-class Phone { }
+class Phone { public: void makeCall() {} };
+
+class SmartPhone : public Camera, public Phone {
+	// has both takePhoto() and make Call() methods.
+}
 ```
+
+### 5. Hybrid Inheritance:
+
+A mix of the above - which can lead to the famous **diamond problem** (covered below).
+
+## Constructor & Destructor Order:
+
+When you create a derived object, constructors 
