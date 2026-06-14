@@ -170,4 +170,49 @@ public:
 
 This is the reason inheritance is so powerful. A **virtual function** lets a derived class override behavior, and lets you call the correct version through a base class pointer or reference at run time.
 
-In the next example we have th
+In the next example we have three classes:
+	Animal,
+	Dog,
+	Cat,
+
+and **Dog** and **Cat** classes is derived classes.
+	Dog -> Animal
+	&
+	Cat -> Animal
+
+do an example:
+
+```cpp
+class Animal {
+public:
+	virtual void speak() {
+		std::cout << "Some sound\n";
+	}
+};
+
+class Dog : public Animal {
+public:
+	void speak() override {
+		std::cout << "Woof\n";
+	}
+};
+
+class Cat : public Animal {
+public:
+	void speak() override {
+		std::cout << "Meow\n";
+	}
+};
+```
+
+Now watch what happens through a base pointer:
+
+```cpp
+Animal* a = new Dog();
+a -> speak();
+
+a = new Cat();
+a -> speak();
+
+std::vector
+```
