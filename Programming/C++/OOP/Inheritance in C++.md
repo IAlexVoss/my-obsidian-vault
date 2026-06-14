@@ -82,4 +82,30 @@ class Dog : Animal { /* ... */ };
 
 ### 2. Multilevel Inheritance:
 
-A chain - derived
+A chain - derived from derived
+
+```cpp
+class Animal { /* ... */ };
+class Mammal : public Aniimal { /* ... */ };
+class Dog : public Mammal { /* ... */ };
+```
+
+### 3. Hierarchical Inheritance:
+
+Multiple classes inherit from one base.
+
+```cpp
+class Animal { /* ... */ };
+class Dog : public Animal { /* ... */ };
+class Cat : public Animal { /* ... */ };
+class Cow : public Animal { /* ... */ };
+```
+
+### 4. Multiple Inheritance
+
+One class inherits than several vases at once. ( C++ allow that; many languages don't).
+
+```cpp
+class Camera { public: void takePhoto() {} };
+class Phone { }
+```
