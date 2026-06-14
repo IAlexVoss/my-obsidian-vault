@@ -156,6 +156,18 @@ To pass arguments to a base constructor, call it in the **initializer** list:
 ```cpp
 class Animal {
 public:
-	std::strin
-}
+	std::string name;
+	Animal(std::stirng n) name(n) {}
+};
+
+class Dog : public Animal {
+public:
+	Dog(std::string tnt) : Animal(n) {} //forward to base constructor
+};
 ```
+
+## Polymorphism & Virtual Functions (the important part):
+
+This is the reason inheritance is so powerful. A **virtual function** lets a derived class override behavior, and lets you call the correct version through a base class pointer or reference at run time.
+
+In the next example we have th
