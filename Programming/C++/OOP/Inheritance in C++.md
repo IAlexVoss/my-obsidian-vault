@@ -35,4 +35,16 @@ d.greet();      // inherited function
 
 ## Inheritance Access Modes:
 
-The keyword between ":" and the vase name (public, protected or pr)
+The keyword between ":" and the base name (**public**, **protected** or **private**) controls how base's members are exposed through the derived class
+
+This is different from member access specifiers - it's about **how inheritance itself behaves**
+
+| Base member is ... | **public** inheritance | **protected** inheritance | **private** inheritance |
+| :----------------- | ---------------------- | ------------------------- | ----------------------- |
+| public             | stays public           | becomes protected         | becomes private         |
+| protected          | stays protected        | stays protected           | becomes private         |
+| private            | not accessible         | not accessible            | not accessible          |
+
+### A few key points:
+
+* **public** **inheritance** is by far the most common - it models a true "is-a" relationship and keeps 
