@@ -120,4 +120,42 @@ A mix of the above - which can lead to the famous **diamond problem** (covered b
 
 ## Constructor & Destructor Order:
 
-When you create a derived object, constructors 
+When you create a derived object, **constructors run base first, then derived**
+
+Destructors run in the **reverse** order.
+
+```cpp
+class Base {
+public:
+	Base() { std::cout << "Base built\n"; }
+	~Base() { std::cout << "Base destroyed\n"; }
+};
+
+class Derived : public Base {
+public:
+	Derived() { std::cout << "Derived built\n"; }
+	~Derived() { std::cout << "Derived destriyed\n"; }
+};
+
+int main() {
+	Derived d;
+}
+```
+
+What the console returns:
+
+```console
+Base built
+Derived built
+Derived destriyed
+Base destroyed
+```
+
+To pass arguments to a base constructor, call it in the **initializer** list:
+
+```cpp
+class Animal {
+public:
+	std::strin
+}
+```
