@@ -209,10 +209,13 @@ Now watch what happens through a base pointer:
 
 ```cpp
 Animal* a = new Dog();
-a -> speak();
+a -> speak();              // "Woof" <- runtime picks Dog's version
 
 a = new Cat();
-a -> speak();
+a -> speak();              // "Meow"
 
-std::vector
+// Treating different types uniformly:
+std::vector<Animal*> zoo = {new Dog(), new Cat()};
+for (Animal* animal : zoo) animal -> speak();        // each prints its own sound
 ```
+
