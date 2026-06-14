@@ -47,4 +47,22 @@ This is different from member access specifiers - it's about **how inheritance i
 
 ### A few key points:
 
-* **public** **inheritance** is by far the most common - it models a true "is-a" relationship and keeps 
+* **public** **inheritance** is by far the most common - it models a true "is-a" relationship and keeps the inheritance intact. Use this 95% of the time.
+* **private / protected inheritance** model "implemented in terms of" rather than "is-a". They're rarer and usually composition is a better choice.
+* Note that a base class's **private** members are never directly accessible in the derived class, regardless of mode. That's what **protected**  is for - it's like private, but visible to derived classes.
+
+C++ example:
+
+```cpp
+class Base {
+private: int secret;
+protected: int family;
+public: int open;
+};
+
+class Derived : public Base {
+	void test() {
+		
+	}
+}
+```
