@@ -9,7 +9,7 @@ This models "is-a" relationships - a **Dog** is an **Animal**, a **Car** is a **
 class Base {
 public:
 	int x;
-	void greet() { std::count << "Hello from Bse\n"; }
+	void greet() { std::count << "Hello from Base\n"; }
 };
 
 class Derived : public Base {  // Derived inherits from Base
@@ -33,7 +33,6 @@ d.y = 10;       // own member
 d.greet();      // inherited function
 ```
 
-## Inheritance Access Modes TEST!!!:
+## Inheritance Access Modes:
 
-test
-
+The keyword between ":" and the vase name (public, protected or pr)
