@@ -278,7 +278,24 @@ DogCat         DogCat
 DogCat <- getw TWO copies of Animal!
 
 ```cpp
-class Animal {public: int}
+class Animal { public: int legs; };
+class Dog : public Animal {};
+class Cat : public Animal {};
+class DogCat : public Dog, public Cat {};
+
+DogCat dc;
+// dc.legs = 4; // Error: ambigous - which Animals legs?
+```
+
+The fix is virtual inheritance, which ensures only one shared copy of the base exists:
+
+```cpp
+class Dog : virtual public Animal {};
+class Cat : virtual public Animal {};
+class DogCat : public Dog, public Cat {};
+
+DogCat dc;
+dc.
 ```
 
 
