@@ -144,7 +144,7 @@ private:
 	
 public:
 	Temperature (double c): celsius(c) {}
-	double to FAHrenheit() { return celsius * 9.0/5.0 + 32.0}
+	double toFAHrenheit() { return celsius * 9.0/5.0 + 32.0}
 };
 ```
 
