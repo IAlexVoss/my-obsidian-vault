@@ -221,4 +221,10 @@ for (Animal* animal : zoo) animal -> speak();        // each prints its own soun
 
 Without `virtual`, `a -> speak()` would always call `Animal::speak()` based on the pointer's type, not the actual object's type.
 
-The difference (static vs. dynamic dispatch) is the heart of polymorphizm 
+The difference (static vs. dynamic dispatch) is the heart of polymorphism
+
+The `override` key word (C++ 11+) is optional strongly recommended - it makes the compiler verify you're actually something catching typos and signature mismatches.
+
+## Virtual Destructors (a common pitfall)
+
+If you delete a derived through a base pointer, **the destructor must be virtual**, or you'll only run the base destructor
