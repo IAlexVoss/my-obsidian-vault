@@ -9,7 +9,7 @@ This models "is-a" relationships - a **Dog** is an **Animal**, a **Car** is a **
 class Base {
 public:
 	int x;
-	void greet() { std::count << "Hello from Base\n"; }
+	void greet() { std::cout << "Hello from Base\n"; }
 };
 
 class Derived : public Base {  // Derived inherits from Base
