@@ -269,6 +269,16 @@ std::cout << s -> area();
 
 ## The Diamond Problem & Virtual Inheritance
 
+Which hybrid/multiple inheritance, a class can end up inheriting the same base twice:
 
+Dog - Animal - Cat
+   |                       |
+DogCat         DogCat
+
+DogCat <- getw TWO copies of Animal!
+
+```cpp
+class Animal {public: int}
+```
 
 
