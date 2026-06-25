@@ -304,5 +304,10 @@ Inheritance uses `class Child: public Parent {}`. Use `public` inheritance almos
 
 Constructors run: base -> derived`
 Destructors in reverse: (`derived -> base).
-The real power comes from virtual functions enabling runtime polymorphism, pure virtual functions defining abstract interfaces, and virtual
+The real power comes from `virtual functions` enabling runtime `polymorphism`, pure virtual functions defining `abstract interfaces`, and `virtual destructors` preventing leaks.
 
+***Reach for virtual inheritance only when the diamond problem appears.***
+
+A common modern guideline:
+
+prefer ***composition over inheritance*** when you can - inheritance is powerful but creates tight coupling, so reserve it for genuine "is-a" relationships.
