@@ -258,7 +258,17 @@ class Circle : public Shape {
 public:
 	Circle(double r) : radius(r) {}
 	double area() const override {
+		return 3.14159 * radius * radius;
 	}
-}
+};
+
+// Shape s;    // Error: can't instance abstract class
+Shape* s = new Circle(5);    // Ok
+std::cout << s -> area();
 ```
+
+## The Diamond Problem & Virtual Inheritance
+
+
+
 
