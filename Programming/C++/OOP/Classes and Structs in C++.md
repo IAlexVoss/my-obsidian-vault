@@ -11,7 +11,7 @@ A **class** or **struct** lets you define a blueprint for objects.
 
 The blueprint describes:
 	**Member variables:** (data the objects holds)
-	 **Member functions:** (operations the object can perform)
+	**Member functions:** (operations the object can perform)
 
 Some example for explanation:
 
