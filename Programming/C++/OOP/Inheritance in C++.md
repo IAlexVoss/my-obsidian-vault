@@ -227,4 +227,15 @@ The `override` key word (C++ 11+) is optional strongly recommended - it makes th
 
 ## Virtual Destructors (a common pitfall)
 
-If you delete a derived through a base pointer, **the destructor must be virtual**, or you'll only run the base destructor
+If you delete a derived through a base pointer, **the destructor must be virtual**, or you'll only run the base destructor - leaking the derived part.
+
+```cpp
+class Base {
+public:
+	virtual ~Base() {} // Always do this if the class will be inherited
+};
+```
+
+> **Rule of thumb**: if a class has **any** virtual function, give it a virtual destructor.
+
+## Abstract Classes & 
