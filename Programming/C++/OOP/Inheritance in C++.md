@@ -295,7 +295,14 @@ class Cat : virtual public Animal {};
 class DogCat : public Dog, public Cat {};
 
 DogCat dc;
-dc.
+dc.legs = 4;    // Ok now - single shared Animal
 ```
 
+## Quick Summary:
+
+Inheritance uses `class Child: public Parent {}`. Use `public` inheritance almost ways (it means "is-a"), and protected members to share with children while hiding from outsiders.
+
+Constructors run: base -> derived`
+Destructors in reverse: (`derived -> base).
+The real power comes from virtual functions enabling runtime polymorphism, pure virtual functions defining abstract interfaces, and virtual
 
