@@ -103,7 +103,7 @@ class Cow : public Animal { /* ... */ };
 
 ### 4. Multiple Inheritance
 
-One class inherits than several vases at once. ( C++ allow that; many languages don't).
+One class inherits than several cases at once. ( C++ allow that; many languages don't).
 
 ```cpp
 class Camera { public: void takePhoto() {} };
