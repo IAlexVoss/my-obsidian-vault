@@ -238,4 +238,27 @@ public:
 
 > **Rule of thumb**: if a class has **any** virtual function, give it a virtual destructor.
 
-## Abstract Classes & 
+## Abstract Classes & Pure Virtual Functions:
+
+A **pure virtual functions** (=0) has no implementation and forces derived classes to provide one.
+
+A class with at least one becomes an **abstract class** - you can't instance it directly.
+
+This is how you define interfaces:
+
+```cpp
+class Shape {
+public:
+	virtual double area() const = 0;    // pure virtual -> abstract class
+	virtual ~Shape() {}
+};
+
+class Circle : public Shape {
+	double radius;
+public:
+	Circle(double r) : radius(r) {}
+	double area() const override {
+	}
+}
+```
+
