@@ -275,7 +275,7 @@ Dog - Animal - Cat
    |                       |
 DogCat         DogCat
 
-DogCat <- getw TWO copies of Animal!
+DogCat <- get TWO copies of Animal!
 
 ```cpp
 class Animal { public: int legs; };
