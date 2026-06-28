@@ -68,3 +68,31 @@ public:
 	}
 };
 ```
+
+This works fine for small projects. The problem appears when you want a Sphere that also has physics, AI, a particle trail and networking...
+
+You end up with deep, brittle hierarchy or with ***multiple inheritance*** that fights you.
+
+## The Composition Approach:
+
+```cpp
+struct Transform {
+	Vector3 position {0, 0, 0};
+	Vector3 rotation {0, 0, 0};
+	Vector3 scale {1, 1, 1};
+};
+
+struct Velocity {
+	Vector3 linear {0, 0, 0};
+	Vector3 angular {0, 0, 0};
+};
+
+struct SphereRenderer {
+	float radius;
+	Color color;
+	
+	void draw(const Transform& t) const {
+		DrawSphere(t.position, radius, )
+	}
+}
+```
