@@ -92,7 +92,29 @@ struct SphereRenderer {
 	Color color;
 	
 	void draw(const Transform& t) const {
-		DrawSphere(t.position, radius, )
+		DrawSphere(t.position, radius, color);
 	}
-}
+};
+
+class Ball {
+	Transform transform;
+	Velocity velocity;
+	SphereRenderer renderer;
+	
+public:
+	Ball(Vector3 pos, float r, Color c) : transform{pos}, renderer{r, c} {}
+	
+	void update(float dt) {
+		transform.position.x = velocity.linear.x * dt;
+		transform.position.y = velocity.linear.y * dt;
+		transform.position.z = velocity.linear.z * dt;
+	}
+	
+	void draw() const { renderer.draw(transform); }
+	
+	Transform& getTransform() { return transform; }
+	Velocity& getVelocity() { return velocity; }
+};
 ```
+
+Now `Transform`, `Velocity` and `SphereRenderer` are independent, reusable
