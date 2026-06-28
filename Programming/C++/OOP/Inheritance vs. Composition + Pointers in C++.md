@@ -43,4 +43,28 @@ public:
 	virtual void draw() const = 0;
 	virtual ~GameObject() {}
 };
+
+class Sphere : public GameObject {
+	float radius;
+	Color color;
+	
+public:
+	Sphere(Vector3 pos, float r, Color c) : radius(r), color(c) {
+		position = pos;
+	}
+	
+	void update(float dt) override { /* spin, bounce, etc. */ }
+	void draw() const override { DrawSphere(position, radius, color); }
+};
+
+class Cube : public GameObject {
+	Vector3 size;
+	Color color;
+
+public:
+	void update(float dt) override { /* */ }
+	void draw() const override {
+		DrawCube(position, size.x, size.y, size.z, color);
+	}
+};
 ```
