@@ -17,11 +17,30 @@ class Player {
 
 ## Full Comparison Table:
 
-| Aspect                 | Inheritance                                            | Composition                        |
-| :--------------------- | ------------------------------------------------------ | ---------------------------------- |
-| Relationship           | "is-a"                                                 | "has-a" / "uses-a"                 |
-| Coupling               | Tight-child knows base's internals (protected members) | Loose-only public inheritance used |
-| Flexibility at runtime | Fixed at compile time (mostly)                         | Can swap parts at runtime          |
-| Code reuse             | Reuses behavior by extension                           | Reuses behavior by delegation      |
-| Polymorphism           | Built-in via virtual functions                         | Requires explicit interfaces       |
-| Memory layout          | Single contiguous block (base + derived)               | Parts may                          |
+| Aspect                 | Inheritance                                            | Composition                                  |
+| :--------------------- | ------------------------------------------------------ | -------------------------------------------- |
+| Relationship           | "is-a"                                                 | "has-a" / "uses-a"                           |
+| Coupling               | Tight-child knows base's internals (protected members) | Loose-only public inheritance used           |
+| Flexibility at runtime | Fixed at compile time (mostly)                         | Can swap parts at runtime                    |
+| Code reuse             | Reuses behavior by extension                           | Reuses behavior by delegation                |
+| Polymorphism           | Built-in via virtual functions                         | Requires explicit interfaces                 |
+| Memory layout          | Single contiguous block (base + derived)               | Parts may live anywhere (depends on storage) |
+| Multiple parents       | Multiple inheritance (messy diamond problem)           | Trivial - just add more members              |
+| Encapsulation          | Base's protected exposed to children                   | Owner only sees public inheritance           |
+| Testability            | Harder-must mock entire base                           | Easier-swap a component                      |
+| Common pifall          | Deep hierarchies become rigid                          | Can lead to wordy delegation                 |
+
+## A Concrete Example: A 3D Object:
+
+```cpp
+class GameObject {
+protected:
+	Vector3 position;
+	Vector3 rotation;
+	
+public:
+	virtual void update(float dt) = 0;
+	virtual void draw() const = 0;
+	virtual ~GameObject() {}
+};
+```
