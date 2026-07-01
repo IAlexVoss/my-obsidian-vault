@@ -165,6 +165,10 @@ class Bullet {
 	const Player* shooter;
 
 public:
-	Bullet(const)
-}
+	Bullet(const Player* p) : shooter(p) {}
+};
 ```
+
+Key rule: ***a raw pointer must never delete***. If your code does, switch to a smart pointer.
+
+### 3. 
