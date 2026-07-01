@@ -240,10 +240,38 @@ References ***can't be reseated*** and ***can't be null*** - exactly when you wa
 
 ## Three Pointer Patterns for your Raylib Simulation:
 
-### Pattern A:
-
-Polymorphic Scene Graph (composition + inheritance combined).
+### Pattern A: Polymorphic Scene Graph (composition + inheritance combined).
 
 The sweet spot is often ***composition for the data***, ***inheritance for the interface***.
 
-A ***Renderable***  interface allows you mixed object types
+A ***Renderable***  interface allows you mixed object types in one container:
+
+```cpp
+class Renderable {
+public:
+	
+	virtual void draw() const = 0;
+	virtual ~Renderable() = default;
+};
+
+class Ball : public Renderable {
+	Transform transform;
+	Velocity velocity;
+	SphereRenderer renderer;
+	
+public:
+	void draw() const override { renderer.draw(transform); }
+	void update(float dt) {/* ... */}
+};
+
+class Scene {
+	std::vector<std::unique_ptr<Renderable>> object;
+
+public:
+	void draw() const {
+		for (const auto& obj : objects) obj->daraw();
+	}
+};
+```
+
+### Pattern B: 
