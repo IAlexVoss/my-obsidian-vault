@@ -142,3 +142,29 @@ If you find yourself adding a virtual method, just to delegate to a member you w
 ## Pointers, References, and Ownership:
 
 In C++, how you store the parts matters as much as which model you choose. Here are the main options:
+
+### 1. By Value (the default - prefer this):
+
+```cpp
+class Ball {
+	Transform transform;    // owned, stored inline, no allocation
+	Velocity velocity;
+}
+```
+
+Cache-friendly no allocation, no null checks. Use this unless you have a reason not to.
+
+### 2. Raw Pointers - Non-Owning References:
+
+A raw pointer (``T*``) should mean ***"I'm looking at this, I don't own it."***
+Useful when several objects need to reference the same external thing.
+
+```cpp
+class Bullet {
+	Transform transform;
+	const Player* shooter;
+
+public:
+	Bullet(const)
+}
+```
