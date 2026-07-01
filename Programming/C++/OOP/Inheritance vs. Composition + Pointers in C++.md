@@ -171,4 +171,6 @@ public:
 
 Key rule: ***a raw pointer must never delete***. If your code does, switch to a smart pointer.
 
-### 3. 
+### 3. `std::unique_ptr<T>` - Single Ownership:
+
+Use this when one object owns another and you need ***polymorphism*** or ***heap allocation***.
