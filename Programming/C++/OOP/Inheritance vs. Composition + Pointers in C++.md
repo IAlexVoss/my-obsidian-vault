@@ -242,4 +242,8 @@ References ***can't be reseated*** and ***can't be null*** - exactly when you wa
 
 ### Pattern A:
 
-Polymorphic
+Polymorphic Scene Graph (composition + inheritance combined).
+
+The sweet spot is often ***composition for the data***, ***inheritance for the interface***.
+
+A ***Renderable***  interface allows you mixed object types
