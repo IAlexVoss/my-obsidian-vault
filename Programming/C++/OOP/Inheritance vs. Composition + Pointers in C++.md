@@ -123,3 +123,12 @@ Any object can pick the pieces it needs. This is essentially what game engines c
 
 ## When to Pick Which (Practical Rules):
 
+### Use inheritance when:
+
+* There's a true "is-a" relationship that won't shift.
+* You need ***runtime polymorphism through a clean interface*** (abstract base + many implementations). This is inheritance's strongest case.
+* The interface is small and stable.
+
+### Use composition when:
+
+* You're combining unrelated capabilities 
