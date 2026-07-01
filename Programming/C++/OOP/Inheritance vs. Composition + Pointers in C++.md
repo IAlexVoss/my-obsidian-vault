@@ -203,5 +203,16 @@ public:
 // Usage:
 
 Scene scene;
-scene.add(std::make_unique<Sphere>)
+scene.add(std::make_unique<Sphere>(/* ... */));
+scene.add(std::make_unique<Cube>(/* ... */));
+
+// Mo manual delete; cleanup is automatic
 ```
+
+This is canonical pattern for a heterogeneous collection of polymorphic objects.
+
+### 4. `std::shared_ptr<T>` - Shared Ownership:
+
+Use only when ***multiple owners genuinely need to keep the object alive***
+
+It uses a reference count, so it's heavier than `unique_ptr`. In simulation/game code it's often overused - most "I need to reference this" cases want a raw pointer or an
