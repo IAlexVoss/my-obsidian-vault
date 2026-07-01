@@ -215,4 +215,15 @@ This is canonical pattern for a heterogeneous collection of polymorphic objects.
 
 Use only when ***multiple owners genuinely need to keep the object alive***
 
-It uses a reference count, so it's heavier than `unique_ptr`. In simulation/game code it's often overused - most "I need to reference this" cases want a raw pointer or an
+It uses a reference count, so it's heavier than `unique_ptr`. In simulation/game code it's often overused - most "I need to reference this" cases want a raw pointer or an ID/index instead.
+
+```cpp
+auto mesh = std::make_shared<Mesh>(/* heavy data */);
+
+ObjectA a(mesh);    // both A and B point at the same mesh.
+ObjectB b(mesh);
+
+// Mesh is destroyed only when both A and B are gone.
+```
+
+### 5. 
