@@ -174,3 +174,13 @@ Key rule: ***a raw pointer must never delete***. If your code does, switch to a 
 ### 3. `std::unique_ptr<T>` - Single Ownership:
 
 Use this when one object owns another and you need ***polymorphism*** or ***heap allocation***.
+It automatically deletes when it goes out of scope.
+
+```cpp
+#include <memory>
+#include <vector>
+
+class Shape {
+public
+}
+```
