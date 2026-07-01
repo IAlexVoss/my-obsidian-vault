@@ -181,6 +181,27 @@ It automatically deletes when it goes out of scope.
 #include <vector>
 
 class Shape {
-public
-}
+public:
+	virtual void draw() const = 0;
+	virtual ~Shape() = default;
+};
+
+class Sphere : public Shape {/* ... */};
+class Cube : public Shape {/* ... */};
+
+class Scene {
+	std::vector<std::unique_ptr<Shape>> shapes;
+public:
+	void add(std::unique_ptr<Shape> s) {
+		shape.push_back(std::move(s));    // transfer ownership
+	}
+	void drawAll() const {
+		for (const auto& s: shapes) s -> draw();
+	}
+};
+
+// Usage:
+
+Scene scene;
+scene.add(std::make_unique<Sphere>)
 ```
