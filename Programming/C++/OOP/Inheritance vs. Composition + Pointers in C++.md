@@ -117,4 +117,9 @@ public:
 };
 ```
 
-Now `Transform`, `Velocity` and `SphereRenderer` are independent, reusable
+Now `Transform`, `Velocity` and `SphereRenderer` are ***independent***, ***reusable*** pieces
+
+Any object can pick the pieces it needs. This is essentially what game engines call the ***Entry-Component pattern*** - and it's why most modern engines (Unity, Unreal, Bevy) favor composition.
+
+## When to Pick Which (Practical Rules):
+
