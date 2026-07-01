@@ -131,4 +131,13 @@ Any object can pick the pieces it needs. This is essentially what game engines c
 
 ### Use composition when:
 
-* You're combining unrelated capabilities 
+* You're combining unrelated capabilities a thing that renders AND collides AND moves).
+* You want to swap behavior at runtime.
+* You're building anything resembling a game engine - entities are best made of parts.
+
+### A useful guideline:
+
+If you find yourself adding a virtual method, just to delegate to a member you would have added anyway, you probably wanted composition.
+
+## Pointers, References, and Ownership:
+
