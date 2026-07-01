@@ -141,3 +141,4 @@ If you find yourself adding a virtual method, just to delegate to a member you w
 
 ## Pointers, References, and Ownership:
 
+In C++, how you store the parts matters as much as which model you choose. Here are the main options:
