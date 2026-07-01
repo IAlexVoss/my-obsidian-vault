@@ -226,4 +226,20 @@ ObjectB b(mesh);
 // Mesh is destroyed only when both A and B are gone.
 ```
 
-### 5. 
+### 5. References(T&) - Borrowed, Non-Owning, Never Null:
+
+Best for function parameters where you guarantee something exists:
+
+```cpp
+void applyGravity(Velocity& v, float dt) {
+	v.linear.y -= 9.81f * dt;
+}
+```
+
+References ***can't be reseated*** and ***can't be null*** - exactly when you want for "borrow this for the duration of the call.".
+
+## Three Pointer Patterns for your Raylib Simulation:
+
+### Pattern A:
+
+Polymorphic
