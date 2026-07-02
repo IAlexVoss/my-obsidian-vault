@@ -277,3 +277,11 @@ public:
 ### Pattern B: Parent-child via Non-Owning Pointers:
 
 For hierarchical transforms (a turret on top of a rank), children often need to know their parent-but they don't own it.
+
+```cpp
+class SceneNode {
+	Transform local;
+	SceneNode* parent = nullptr;
+	std::vector<std::unique_ptr<SceneNode>>
+}
+```
