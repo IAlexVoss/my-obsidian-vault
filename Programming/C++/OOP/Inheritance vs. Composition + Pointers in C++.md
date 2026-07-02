@@ -281,7 +281,23 @@ For hierarchical transforms (a turret on top of a rank), children often need to 
 ```cpp
 class SceneNode {
 	Transform local;
-	SceneNode* parent = nullptr;
-	std::vector<std::unique_ptr<SceneNode>>
-}
+	SceneNode* parent = nullptr;                      // observes - doesn't own
+	std::vector<std::unique_ptr<SceneNode>> children; // owns
+	
+public:
+	Transform worldTransform() const {
+		if (parent) {
+			
+			// combine with parent's world transform
+			// (left as an exercise - the structure is what matters)
+		}
+		return local;
+	}
+	void addChild(std::unique_ptr<SceneNode> c) {
+		c->parent = this;
+		children.push_back(std::move(c));
+	}
+};
 ```
+
+This is standard scene-graph idiom: ***owning pointers point down the tree***, ***non-owning pointers point up***. No cycles, no leaks.
