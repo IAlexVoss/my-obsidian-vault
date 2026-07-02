@@ -301,3 +301,23 @@ public:
 ```
 
 This is standard scene-graph idiom: ***owning pointers point down the tree***, ***non-owning pointers point up***. No cycles, no leaks.
+
+### Pattern C: Data-Oriented (advanced, but worth knowing):
+
+For physics simulations with thousands of objects, storing pointers to scattered heap objects kills cache performance. The alternative - ***structure of arrays*** - stores components in parallel contiguous arrays:
+
+```cpp
+class ParticleSystem {
+	std::vector<Vector3> positions;
+	std::vector<Vector3> velocities;
+	std::vector<Vector3> lifetimes;
+	
+public:
+	void update(float dt) {
+		// Tight loop excellent cache behavior, easy to SMID-vectorize
+		for (size_t i = 0; i < positions.size(); ++i) {
+			positions[i].x += velocities 
+		}
+	}
+}
+```
