@@ -316,8 +316,21 @@ public:
 	void update(float dt) {
 		// Tight loop excellent cache behavior, easy to SMID-vectorize
 		for (size_t i = 0; i < positions.size(); ++i) {
-			positions[i].x += velocities 
+			positions[i].x += velocities[i].x * dt;
+			positions[i].y += velocities[i].y * dt;
+			positions[i].z += velocities[i].z * dt;
+			lifetimes[i] -= dt;
 		}
 	}
-}
+};
 ```
+
+You don't need this for 100 objects. You'll want it for 100 000 objects.
+
+Worth to knowing the option exists.
+
+## Quick Hints for RayLib Project:
+
+### 1. Make `Transform` a `struct`, not a `class`.
+
+It's pure idea
