@@ -346,3 +346,15 @@ should be plain structs with free functions a member operators - no inheritance,
 A ***Renderable*** interface or ***Collider*** interface?
 
 Good use of virtuals a 12-level deep Game object hierarchy? Painful. Keep your hierarchies shallow (1-2 levels) and wide.
+
+### 4. Default to `unique_ptr` for owned heap objects, raw pointers for observation.
+
+Avoid `shared_ptr` unless lifetime really is shared . Avoid `new`/`delete` directly.
+
+### 5. Pass big things by `const T&`, small things (`Vector3`, `IDs`, `floats`) by value.
+
+A Vector3 is 12 bytes - copying it is faster than passing a pointer.
+
+### 6. Don't make a class abstract unless you actually have multiple implementations.
+
+A Shape base with only Sphere deriving from it is just noise; 
