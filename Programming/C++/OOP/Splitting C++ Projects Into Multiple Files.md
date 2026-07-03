@@ -132,4 +132,8 @@ For first split, just having headers and sources distinguished by extension is a
 
 ## Quick Summary:
 
-C++ files split into headers
+C++ files split into ***headers*** (`.hpp`, declarations - what exists) and ***sources*** (`.cpp`, definitions - how it works):
+
+Every header needs a guard (`#pragma once`), and the compiler processes each `.cpp` independently before the linker stitches them together.
+
+Put ***class structure*** and ***short inline functions*** in headers, ***all real implementations*** in sources, and ***forward-declare*** types you only reference
