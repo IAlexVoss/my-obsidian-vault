@@ -371,3 +371,17 @@ If you're updating positions for 10 000 particles every frame, an array of Parti
 Pointers express ownership: value for owned-and-inline, `unique_ptr` for owned - on-heap (especially polymorphic), raw pointer or reference for observation, `shared_ptr` only when ownership is genuinely shared.
 
 For raylib project, lean composition with a thin sprinkle of inheritance at the rendering/collision boundaries - that's the modern, clean shape this kind of code wants to take.
+
+## Some Additional Hints:
+
+In read-only methods use `const` key-word
+Use `std::string` instead `char*`
+Don't duplicating variables
+
+App not IS-A Window
+App HAS-A Window
+
+Use initializer lists
+Create Constructor-Chaining
+Forward declarations at the top usually.
+Built Debug logging.
