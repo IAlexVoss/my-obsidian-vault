@@ -136,4 +136,6 @@ C++ files split into ***headers*** (`.hpp`, declarations - what exists) and ***s
 
 Every header needs a guard (`#pragma once`), and the compiler processes each `.cpp` independently before the linker stitches them together.
 
-Put ***class structure*** and ***short inline functions*** in headers, ***all real implementations*** in sources, and ***forward-declare*** types you only reference
+Put ***class structure*** and ***short inline functions*** in headers, ***all real implementations*** in sources, and ***forward-declare*** types you only reference by pointer to keep header coupling now.
+
+One class per file pair, own header included first in each source, and a build system (CMake) writing it all up - those habits will scale from a 5-file project to a 500-file one without changing.
