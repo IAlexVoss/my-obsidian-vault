@@ -19,6 +19,14 @@ That's what header files are for:
 
 ## Headers AND Source files:
 
-| File type | Extension | Contains                                                          | Purpose |
-| :-------- | --------- | ----------------------------------------------------------------- | ------- |
-| Header    | .h/.hpp   | Declarations - class definitions, functions signatures, constants |         |
+| File type | Extension | Contains                                                          | Purpose                                                 |
+| :-------- | --------- | ----------------------------------------------------------------- | ------------------------------------------------------- |
+| Header    | .h/.hpp   | Declarations - class definitions, functions signatures, constants | Tells other files "this exists, here's how to call it". |
+| Source    | .cpp      | Definitions - function bodies, the actual code                    | Implements what the header promised                     |
+
+### Three rules of thumb:
+
+Header = "what is it"
+Source = "how it works"
+
+Other files `#include` the header to learn about your class, then the linker hooks up the implementations 
