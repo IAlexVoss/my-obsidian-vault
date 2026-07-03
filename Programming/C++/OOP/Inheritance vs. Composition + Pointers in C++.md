@@ -368,4 +368,6 @@ If you're updating positions for 10 000 particles every frame, an array of Parti
 ***Inheritance*** is great  for stable, narrow interfaces with many implementations - that's where virtual functions can their keep.
 ***Composition*** is great for assembling capabilities - and it's almost ways the better default in simulation and game code.
 
-Pointers express ownership: value for owned-and-inline, `unique_ptr` for owned - on-heap (especially polymorphic), raw pointer or reference for observation, `shared_ptr`
+Pointers express ownership: value for owned-and-inline, `unique_ptr` for owned - on-heap (especially polymorphic), raw pointer or reference for observation, `shared_ptr` only when ownership is genuinely shared.
+
+For raylib project, lean composition with a thin sprinkle of inheritance at the rendering/collision boundaries - that's the modern, clean shape this kind of code wants to take.
