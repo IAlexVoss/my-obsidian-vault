@@ -343,4 +343,6 @@ should be plain structs with free functions a member operators - no inheritance,
 
 ### 3. Reach for `virtual` only at boundaries:
 
-A Renderable interface or Collider inheritance?
+A ***Renderable*** interface or ***Collider*** interface?
+
+Good use of virtuals a 12-level deep Game object hierarchy? Painful. Keep your hierarchies shallow (1-2 levels) and wide.
