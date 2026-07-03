@@ -109,5 +109,27 @@ This speeds up compilation and reduces coupling. You'll need the full include in
 
 ```text
 my_sim/
--
+- include/                        <- all .hpp files
+| - app.hpp
+| - scene.hpp
+| - sphere.hpp
+| - ground_plane.hpp
+| - renderable.hpp
+| - components.hpp
+- src/                            <- all .cpp files
+| - main.cpp
+| - app.cpp
+| - scene.cpp
+| - sphere.cpp
+| - ground_plane.cpp
+- assets/                         <- textures, models, sounds (later)
+- CMakeLists.txt                  <- build configuration.
 ```
+
+Smaller projects can keep `.hpp` and `.cpp` together in `src/` - both styles are common.
+
+For first split, just having headers and sources distinguished by extension is already a huge step up.
+
+## Quick Summary:
+
+C++ files split into headers
