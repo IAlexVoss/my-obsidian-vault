@@ -78,4 +78,19 @@ void Sphere::update(float dt) {
 }
 ```
 
-The `Sphere::` syntax tells the compile
+The `Sphere::` syntax tells the compiler "this is the implementation of `update`" belonging to class `Sphere`.
+
+***Exceptions*** (things that do go un ***headers***):
+
+> Class definitions themselves (their structure must be visible).
+> `inline` functions and very short methods.
+> `constexpr` constants.
+> Templates (they must be visible to every file that uses them - additional topic).
+
+### Rule 3: Never `#include` a `.cpp` file
+
+Only include `.hpp`/`.h`. Including a `.cpp` causes the linker to see the same code twice -> "multiple definition" errors.
+
+### Rule 4: Avoid ***using namespace*** in headers:
+
+If a header says using namespace std; every file including it inher
