@@ -91,6 +91,23 @@ The `Sphere::` syntax tells the compiler "this is the implementation of `update`
 
 Only include `.hpp`/`.h`. Including a `.cpp` causes the linker to see the same code twice -> "multiple definition" errors.
 
-### Rule 4: Avoid ***using namespace*** in headers:
+### Rule 4: Avoid `using namespace` in headers:
 
-If a header says using namespace std; every file including it inher
+If a header says using namespace std; every file including it inherits that - polluting everyone's namespace and causing weird conflicts.
+
+In headers, write `std::string`, `std::vector`, etc. explicitly.
+
+In `.cpp` files, `using namespace` is your choice.
+
+### Rule 5: Forward declare when you can:
+
+If a `app.hpp` only needs ***a pointer*** to `Scene`, you don't need `#include "scene.hpp"` - just say `class Scene;` (a forward declaration).
+
+This speeds up compilation and reduces coupling. You'll need the full include in the `.cpp` file through.
+
+## Recommended Folder Structure:
+
+```text
+my_sim/
+-
+```
