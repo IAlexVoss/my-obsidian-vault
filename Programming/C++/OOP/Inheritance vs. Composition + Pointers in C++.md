@@ -357,4 +357,8 @@ A Vector3 is 12 bytes - copying it is faster than passing a pointer.
 
 ### 6. Don't make a class abstract unless you actually have multiple implementations.
 
-A Shape base with only Sphere deriving from it is just noise; 
+A Shape base with only Sphere deriving from it is just noise; promote Sphere and add the base when the second shape arrives.
+
+### 7. Think about cache:
+
+If you're updating positions for 10 000 particles every frame, an array of Particle objects beats a vector of `unique_ptr<Particle>` by a wide margin - same data, but pointer indirection trashes the cache.
