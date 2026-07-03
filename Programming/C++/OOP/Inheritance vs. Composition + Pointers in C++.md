@@ -333,4 +333,14 @@ Worth to knowing the option exists.
 
 ### 1. Make `Transform` a `struct`, not a `class`.
 
-It's pure idea
+It's pure data - `position`, `rotation`, `scale`.
+
+### 2. Separate math types from game objects.
+
+`Vector3`, `Matrix`, `Quaternion`
+
+should be plain structs with free functions a member operators - no inheritance, no virtual, value semantics.
+
+### 3. Reach for `virtual` only at boundaries:
+
+A Renderable interface or Collider inheritance?
