@@ -29,4 +29,26 @@ That's what header files are for:
 Header = "what is it"
 Source = "how it works"
 
-Other files `#include` the header to learn about your class, then the linker hooks up the implementations 
+Other files `#include` the header to learn about your class, then the linker hooks up the implementation from the source file.
+
+## The Core Rules:
+
+### Rule 1: Header guards (or `#pragma once`)
+
+If two files both include the same header, the compiler would see the same code twice and complain.
+
+Prevent this with either:
+
+```hpp
+// Classic style - works everywhere
+#ifdef SPHERE_HPP
+#define SPHERE_HPP
+
+// ... header contents ...
+
+#endif
+```
+
+```hpp
+#pragma once
+```
