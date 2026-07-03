@@ -5,3 +5,6 @@ C++ is non-object oriented language, but you can use it like the object-oriented
 ### OOP:
 #### [[Classes and Structs in C++]]
 #### [[Inheritance in C++]]
+
+#### [[Inheritance vs. Composition + Pointers in C++]]
+
