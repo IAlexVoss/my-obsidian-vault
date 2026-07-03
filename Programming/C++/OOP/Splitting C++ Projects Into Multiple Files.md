@@ -49,6 +49,33 @@ Prevent this with either:
 #endif
 ```
 
+Or the modern, simpler form:
+
 ```hpp
 #pragma once
+
+// ... header content ...
 ```
+
+`#pragma once` isn't technically standard but every modern compiler supports it.
+I recommend it - less noise, can't be typos
+
+### Rule 2: Only declaration in headers, definitions in sources
+
+```hpp
+// sphere.hpp - DECLARES
+class Sphere {
+public:
+	void update(float dt); // decalration only - no body
+};
+```
+
+```cpp
+// shpere.cpp - DEFINES
+#include "sphere.hpp"
+void Sphere::update(float dt) {
+	// actual implementation
+}
+```
+
+The `Sphere::` syntax tells the compile
