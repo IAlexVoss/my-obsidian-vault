@@ -362,3 +362,10 @@ A Shape base with only Sphere deriving from it is just noise; promote Sphere and
 ### 7. Think about cache:
 
 If you're updating positions for 10 000 particles every frame, an array of Particle objects beats a vector of `unique_ptr<Particle>` by a wide margin - same data, but pointer indirection trashes the cache.
+
+## Quick Summary:
+
+***Inheritance*** is great  for stable, narrow interfaces with many implementations - that's where virtual functions can their keep.
+***Composition*** is great for assembling capabilities - and it's almost ways the better default in simulation and game code.
+
+Pointers express ownership: value for owned-and
