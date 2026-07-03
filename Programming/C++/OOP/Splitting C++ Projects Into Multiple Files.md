@@ -12,3 +12,13 @@ Unlike Python or JavaScript C++ doesn't have "modules" in the traditional sense 
 The compiler sees only that one `.cpp` and whatever `#include`'s pull in.
 
 ### 2. Linking - the linker combines all objects files into one executable, resolving references between them.
+
+The compiler processes catch `.cpp` file in isolation. So if main.cpp wants to use a `Sphere` class defined in `sphere.cpp`, it needs to know about `Sphere` - its name, its members, its method signature - without seeing the implementation.
+
+That's what header files are for:
+
+## Headers AND Source files:
+
+| File type | Extension | Contains                                                          | Purpose |
+| :-------- | --------- | ----------------------------------------------------------------- | ------- |
+| Header    | .h/.hpp   | Declarations - class definitions, functions signatures, constants |         |
