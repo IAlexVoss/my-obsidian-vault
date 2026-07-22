@@ -6,4 +6,9 @@ This note builds up from the memory model, then covers ***pointers***, ***refere
 
 ## Why this matters for games and simulations:
 
-> No 
+**No hidden copies in the loop**: A simulation updates thousands of objects per time
+
+Passing a big `Transform` or `Mesh` by value copies it every call. Passing by reference or pointer passes only an address (usually 8 bytes).
+
+**Shared state between systems**: The physics system, the renderer, and the AI all need to look at the same entity, not 
+
