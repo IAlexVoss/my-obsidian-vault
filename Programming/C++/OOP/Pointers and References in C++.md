@@ -120,5 +120,12 @@ Assigning to `ref` changes `score`; it does not wake `ref` point elsewhere:
 ```cpp
 int a = 1, b = 2;
 int& r = a;
-r = b;             // this does NOT rebind r to b. It copies b's value into a. Now a == 2, and r still alia
+r = b;             // this does NOT rebind r to b. It copies b's value into a. Now a == 2, and r still aliases a
 ```
+
+Because a reference has no "empty" state and can't be reached, it's the safer, simpler choice when you always have exactly one valid object to refer to - most commonly as a function parameter.
+
+# Pointers VS References - when to use which:
+
+
+
