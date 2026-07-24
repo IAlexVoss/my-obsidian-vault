@@ -37,3 +37,10 @@ A pointer or reference is just a way to name an address so you can reach the obj
 
 # Pointers:
 
+A ***pointer*** is a variable whose value is the memory address of another object.
+
+## Declaring and using a pointer:
+
+Three operations matter:
+
+`*` - in a declaration means "pointer to";
