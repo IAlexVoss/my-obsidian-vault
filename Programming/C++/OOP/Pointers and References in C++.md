@@ -44,3 +44,19 @@ A ***pointer*** is a variable whose value is the memory address of another objec
 Three operations matter:
 
 `*` - in a declaration means "pointer to";
+`&` - (address-of) gives you the address of an object;
+`*` - (dereference) gives you the object a pointer points to.
+
+```cpp
+int hp = 100;
+int* p = &hp;    // p holds the address of hp
+// "p" is a pointer to int, initiaized with the address of hp
+
+std::cout << p;  // prints an address, e.g. 0x7ffc...
+std::cout << *p; // prints 100 -> dereference the value AT that address
+
+*p = 75;         // writes through the pointer; now hp == 75
+std::cout << hp; // prints 75
+```
+
+Read `*p` as "the thing p points to"
