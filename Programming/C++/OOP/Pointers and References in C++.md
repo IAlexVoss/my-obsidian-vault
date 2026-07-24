@@ -18,5 +18,9 @@ Passing a big `Transform` or `Mesh` by value copies it every call. Passing by re
 
 ## Memory model: stack VS heap:
 
+Every object ***lives at some address in memory***. There are two regions you care about:
 
+**Stack** - automatic storage. Local variables live here. Fast, freed automatically when the scope ends. Limited in size.
+
+**Heap** - (free storage) - dynamic storage. You request memory explicitly and it says alive until 
 
