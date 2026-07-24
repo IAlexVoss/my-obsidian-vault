@@ -108,4 +108,17 @@ ref = 80;             // modifiers score through reference
 std::cout << score;   // prints 80
 ```
 
-Two hard rules
+Two hard rules distinguish references from pointers:
+
+1. A ***reference must be initialized when declared***. There is no "null reference" and no uninitialized reference.
+2. ***A reference can never be reseated***. After declaring and initializing.
+
+`int& ref = score`, ref refers to `score` for is entire life.
+
+Assigning to `ref` changes `score`; it does not wake `ref` point elsewhere:
+
+```cpp
+int a = 1, b = 2;
+int& r = a;
+r = b;             // this does NOT rebind r to b. It copies b's value into a. Now a == 2, and r still alia
+```
