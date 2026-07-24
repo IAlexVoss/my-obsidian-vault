@@ -78,4 +78,15 @@ Dereferencing a `nullptr` (`*target` when `target == nullptr`) is ***undefined b
 
 ## Reading pointer declarations:
 
-The `*` binds to the variable, not the type. This sur
+The `*` binds to the variable, not the type. This surprises people:
+
+```cpp
+int* a, b;  // a is int* but b is a plain int
+int *a, *b; // both pointers - clearer to write if this way
+```
+
+## Pointer to Pointer:
+
+A pointer can point to another pointer. You rarely need this in game logic, but you'll see it in C-style APIs and 2D arrays.
+
+c
