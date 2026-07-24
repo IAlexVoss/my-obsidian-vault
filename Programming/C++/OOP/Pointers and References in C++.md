@@ -66,5 +66,16 @@ Read `*p` as "the thing p points to". Writing to `*p` modifiers the original obj
 A pointer that doesn't point at a void object should be `nullptr` (modern C++ prefer it over the `NULL` or `0`).
 
 ```cpp
-int* target = null
+int* target = nullptr;    // points to nothing yet
+if (target != nullptr) {
+	// always check before dereferencting
+	attack(*target);
+}
+// shorthabd: if (target) {...}
 ```
+
+Dereferencing a `nullptr` (`*target` when `target == nullptr`) is ***undefined behavior*** - usually a crash. Checking for null is how you model "optional" links e.g. `Entity* currentTarget` that may or may not exist.
+
+## Reading pointer declarations:
+
+The `*` binds to the variable, not the type. This sur
