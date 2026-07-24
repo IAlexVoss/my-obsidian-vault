@@ -127,5 +127,11 @@ Because a reference has no "empty" state and can't be reached, it's the safer, s
 
 # Pointers VS References - when to use which:
 
-
-
+| Feature                            | Pointer `*T`        | Reference `T&`             |
+| :--------------------------------- | ------------------- | -------------------------- |
+| Can be null / "no object"          | Yes (`nullptr`)     | No, must bind to something |
+| Can be reseated to another object? | Yes                 | No, bound for life         |
+| Must be initialized                | No (but you should) | Yes                        |
+| Syntax to access value             | `*p`, p -> member   |                            |
+| Pointer ariphmetic                 |                     |                            |
+| Typical size                       |                     |                            |
