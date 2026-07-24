@@ -62,3 +62,9 @@ std::cout << hp; // prints 75
 Read `*p` as "the thing p points to". Writing to `*p` modifiers the original object, because the pointer refers to the same memory.
 
 ## `nullptr` - a pointer to nothing:
+
+A pointer that doesn't point at a void object should be `nullptr` (modern C++ prefer it over the `NULL` or `0`).
+
+```cpp
+int* target = null
+```
