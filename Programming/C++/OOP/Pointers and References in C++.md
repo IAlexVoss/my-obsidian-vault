@@ -59,4 +59,6 @@ std::cout << *p; // prints 100 -> dereference the value AT that address
 std::cout << hp; // prints 75
 ```
 
-Read `*p` as "the thing p points to"
+Read `*p` as "the thing p points to". Writing to `*p` modifiers the original object, because the pointer refers to the same memory.
+
+## `nullptr` - a pointer to nothing:
