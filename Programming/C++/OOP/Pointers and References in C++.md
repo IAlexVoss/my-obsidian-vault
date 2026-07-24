@@ -98,3 +98,14 @@ std::cout << **pp;    // prints 5 (dereference twice)
 
 # References:
 
+A `reference` is an ***alias*** - another name for an existing object.
+Once bound, the reference is that object for all practical purposes.
+
+```cpp
+int score = 50;
+int& ref = score;     // ref is now another name for score.
+ref = 80;             // modifiers score through reference
+std::cout << score;   // prints 80
+```
+
+Two hard rules
