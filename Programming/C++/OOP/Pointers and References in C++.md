@@ -4,7 +4,7 @@ In everyday application code you can avoid them, but in ***games***, ***simulati
 
 This note builds up from the memory model, then covers ***pointers***, ***references***, ***const***, ***function params***, ***dynamic memory***, ***smart pointers***, ***polymorphism***, and finally concrete game/simulation patterns and pitfalls.
 
-## Why this matters for games and simulations:
+# Why this matters for games and simulations:
 
 **No hidden copies in the loop**: A simulation updates thousands of objects per time
 
@@ -16,7 +16,7 @@ Passing a big `Transform` or `Mesh` by value copies it every call. Passing by re
 
 **Explicit ownership and lifetime**: Engines create and destroy objects constantly. Pointers (especially smart pointers) let you express ***who owns what and when it dies***.
 
-## Memory model: stack VS heap:
+# Memory model: stack VS heap:
 
 Every object ***lives at some address in memory***. There are two regions you care about:
 
@@ -26,5 +26,14 @@ Every object ***lives at some address in memory***. There are two regions you ca
 Larger, but slower to allocate and your responsibility to free.
 
 ```cpp
-
+void example() {
+	int a = 10;               // 'a' lives on the stack, freed at end of function
+	int* p = new int(20);     // the int lives on the heap; 'p' (on the stack) holds its adderess
+	delete p;                 // you must free heap memory manually, or use a smart pointer.
+}
 ```
+
+A pointer or reference is just a way to name an address so you can reach the object living there.
+
+# Pointers:
+
