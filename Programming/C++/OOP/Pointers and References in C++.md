@@ -138,4 +138,10 @@ Because a reference has no "empty" state and can't be reached, it's the safer, s
 
 ## Rule of thumb:
 
-Use a ***reference*** when the thing always exists and newer changes identity; Use a ***pointer*** when it can be absent (`nullptr`) or when you need to point it at 
+Use a ***reference*** when the thing always exists and newer changes identity; Use a ***pointer*** when it can be absent (`nullptr`) or when you need to point it at different objects over time.
+
+# Const correctness:
+
+`const` restricts what you can do through a pointer or reference.
+
+This
