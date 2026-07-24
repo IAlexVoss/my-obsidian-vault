@@ -127,11 +127,15 @@ Because a reference has no "empty" state and can't be reached, it's the safer, s
 
 # Pointers VS References - when to use which:
 
-| Feature                            | Pointer `*T`        | Reference `T&`             |
-| :--------------------------------- | ------------------- | -------------------------- |
-| Can be null / "no object"          | Yes (`nullptr`)     | No, must bind to something |
-| Can be reseated to another object? | Yes                 | No, bound for life         |
-| Must be initialized                | No (but you should) | Yes                        |
-| Syntax to access value             | `*p`, p -> member   |                            |
-| Pointer ariphmetic                 |                     |                            |
-| Typical size                       |                     |                            |
+| Feature                            | Pointer `*T`                                                          | Reference `T&`                                                 |
+| :--------------------------------- | --------------------------------------------------------------------- | -------------------------------------------------------------- |
+| Can be null / "no object"          | Yes (`nullptr`)                                                       | No, must bind to something                                     |
+| Can be reseated to another object? | Yes                                                                   | No, bound for life                                             |
+| Must be initialized                | No (but you should)                                                   | Yes                                                            |
+| Syntax to access value             | `*p`, `p -> member`                                                   | `r`, `r.member` (like a normal variable)                       |
+| Pointer ariphmetic                 | Yes                                                                   | No                                                             |
+| Typical size                       | Optional / rebindable links ownership, arrays, polymorphic containers | Function parameters, return values. aliases that always exist. |
+
+## Rule of thumb:
+
+Use a ***reference*** when the thing always exists and newer changes identity; Use a ***pointer*** when it can be absent (`nullptr`) or when you need to point it at 
