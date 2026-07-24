@@ -89,4 +89,12 @@ int *a, *b; // both pointers - clearer to write if this way
 
 A pointer can point to another pointer. You rarely need this in game logic, but you'll see it in C-style APIs and 2D arrays.
 
-c
+```cpp
+int x = 5;
+int* p = &x;
+int** pp = &p;        // pp points to p. which points to x
+std::cout << **pp;    // prints 5 (dereference twice)
+```
+
+# References:
+
