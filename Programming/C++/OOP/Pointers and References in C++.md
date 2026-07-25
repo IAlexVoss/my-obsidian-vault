@@ -218,4 +218,16 @@ float distance(const Vector3D& a, const Vector3& b) {
 }
 ```
 
-This is the default, you s
+This is the default, you should reach for when a function only needs to read a non-edit object.
+
+## Pass by pointer - no copy, optional, explicit at call site:
+
+```cpp
+// nullptr means "no target at this frame"
+void aimAt(Turret& t, const Entity* target) {
+	if (target) t.rotateTowards(target->position);
+}
+
+aimAt(turret, nullptr);        // explicity ""
+aimAt(turret, &someEnemy);
+```
