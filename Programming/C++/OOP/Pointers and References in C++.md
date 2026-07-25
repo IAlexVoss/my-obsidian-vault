@@ -156,6 +156,10 @@ const int* p1 = &value;    // pointer to const int, can't modify *p1, Can reseat
 // *p1 = 5;                // Error
 p1 = nullptr;              // OK
 
-int* const p2 = &value
+int* const p2 = &value;    // const pointer to int, can modify *p2, can't reseat p2
+*p2 = 5;                   // OK
+// p2 = nullptr;           // Error
 
+const int* const p3 = &value;    // const pointer to const int, neither allowed
 ```
+
