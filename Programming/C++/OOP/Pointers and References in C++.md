@@ -180,5 +180,8 @@ A const reference can also bind a ***temporary*** (an r value) and extend its li
 
 ```cpp
 const int& r = 5;    // OK, binds to a temporary
-// int& bad = 5
+// int& bad = 5;
 ```
+
+# Passing objects to functions (the most practical part):
+
