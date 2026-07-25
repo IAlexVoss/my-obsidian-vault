@@ -185,4 +185,20 @@ const int& r = 5;    // OK, binds to a temporary
 
 # Passing objects to functions (the most practical part):
 
-This is where the choice between value, pointer
+This is where the choice between value, pointer, and reference has the biggest day-to-day impact in a simulation.
+
+## Pass by value - makes a copy:
+
+```cpp
+void tick(GameObject state) { ... } // copies the entrie GameState every call
+```
+
+Fine for small, cheap types (`int`, `float`, a 2 float vector).
+
+Wasteful for anything large or containing heap data (`vectors`, `strings`, `meshes`).
+
+## Pass by reference - no copy, can modify:
+
+```cpp
+
+```
