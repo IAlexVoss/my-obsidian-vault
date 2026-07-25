@@ -200,5 +200,22 @@ Wasteful for anything large or containing heap data (`vectors`, `strings`, `mesh
 ## Pass by reference - no copy, can modify:
 
 ```cpp
+void applyDamage(Entity& e, int amount) {
+	e.hp -= amount;    // modifiers the caller's object directly
+}
 
+Entity boss;
+applyDamage(boss, 10); // boss is changed
 ```
+
+Use this for ***output parameters*** and for ***in-place mutation*** of large objects
+
+## Pass by const reference - no copy, read only:
+
+```cpp
+float distance(const Vector3D& a, const Vector3& b) {
+	return (a-b).length();    // reads both, copies neither, modifiers neither
+}
+```
+
+This is the default, you s
