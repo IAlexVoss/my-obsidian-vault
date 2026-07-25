@@ -144,4 +144,18 @@ Use a ***reference*** when the thing always exists and newer changes identity; U
 
 `const` restricts what you can do through a pointer or reference.
 
-This matters enormously in engine APIs : it leys you pass a big object cheapy  (by address) while guarateeing 
+This matters enormously in engine APIs : it leеs you pass a big object cheapy (by address) while ***guaranteeing the function won't modify it***.
+
+## `const` with pointers:
+
+Read this right-to-left:
+
+```cpp
+int value = 10;
+const int* p1 = &value;    // pointer to const int, can't modify *p1, Can reseat p1
+// *p1 = 5;                // Error
+p1 = nullptr;              // OK
+
+int* const p2 = &value
+
+```
