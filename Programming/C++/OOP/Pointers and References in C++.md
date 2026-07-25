@@ -185,3 +185,4 @@ const int& r = 5;    // OK, binds to a temporary
 
 # Passing objects to functions (the most practical part):
 
+This is where the choice between value, pointer
