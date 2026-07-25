@@ -163,3 +163,22 @@ int* const p2 = &value;    // const pointer to int, can modify *p2, can't reseat
 const int* const p3 = &value;    // const pointer to const int, neither allowed
 ```
 
+## `const` references - the workhorse:
+
+A ***reference to const*** can read the object but not modify it.
+This is the standard way to pass large read-only objects:
+
+```cpp
+// Passes only an address, promises not to modify the mesh
+float computeVolume(const Mesh& mesh) {
+	// mesh.vertices[0] = ...;    // Error: can't modify through const&
+	return mesh.boundindgBox().volume();
+}
+```
+
+A const reference can also bind a ***temporary*** (an r value) and extend its lifetime, which a non-const reference cannot:
+
+```cpp
+const int& r = 5;    // OK, binds to a temporary
+// int& bad = 5
+```
