@@ -270,5 +270,20 @@ Enemy* e = new Enemy();    // heap allocated, lives untill you delete it.
 e -> tekeTurn();
 delete e;                  // free it - Required, or you leak memory.
 
-int* 
+int* buffer = new int[100];  // array form
+delete[] buffer;             // must use delete[], not just simple delete
+```
+
+Raw `new` / `delete` is ***error-prone and discouraged in modern C++***.
+
+Three classic bugs:
+
+	- Memory leak - you forget to delete, memory is never reclaimed. In a game loop this grows every frame untill you run out.
+	- Dangling-pointer - you delete but keep using the pointer (use-after-free). Undefined behavior
+	- Double free - you delete the same pointer twice. Undefined behavior / crash.
+
+```cpp
+Enemy* e = new Enemy();
+delete e;
+
 ```
