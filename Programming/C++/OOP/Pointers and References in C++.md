@@ -228,6 +228,18 @@ void aimAt(Turret& t, const Entity* target) {
 	if (target) t.rotateTowards(target->position);
 }
 
-aimAt(turret, nullptr);        // explicity ""
-aimAt(turret, &someEnemy);
+aimAt(turret, nullptr);        // explicity "no target"
+aimAt(turret, &someEnemy);     // the & at the call site signals "might be modified optional"
 ```
+
+## Guideline:
+
+| You need to...                              | Use           |
+| :------------------------------------------ | ------------- |
+| Read a small, cheap value                   | pass by value |
+| Read a large object without copying         | `const T&`    |
+| Modify the caller's object                  | `T&`          |
+| Modify it, or accept "no object" (nullable) | `T*`          |
+
+# Pointers and arrays:
+
