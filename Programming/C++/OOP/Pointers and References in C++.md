@@ -395,3 +395,6 @@ Entity base = goblin;    // BUG: only the Entity part is copied;
                          // the enemy-ness is lost.
 //base.update();         // would call the base version, not Enemy's.
 ```
+
+This is a key reason engines store polymorphic objects as pointers / references, never as base-class values.
+
