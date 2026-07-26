@@ -427,4 +427,28 @@ for (const auto& e : entities) e->update();
 
 ## Non-owning links between systems:
 
-A component often needs to reach back to its entry, or an AI needs a target - but it
+A component often needs to reach back to its entry, or an AI needs a target - but it ***does not*** own it.
+
+Use a raw pointer (nullable) or a reference (always present):
+
+```cpp
+struct AIComponent {
+	Enity* self = nullptr;    // who I belong to (set once, non-owning)
+	Entity* target = nullptr; // may be null: I might have no target.
+}
+```
+
+The raw pointer here is the correct, idiomatic chooise: it signals "observing it, not owning".
+
+## Scene graph: (parent / child):
+
+The parent owns its children, each child points back to its parent with a ***raw*** pointer.
+
+Using an owning pointer both ways would create a cycle that never frees:
+
+```cpp
+struct Node {
+	Node* parent = nullptr;    // non-owning, avoids a cycle
+	std::vector
+}
+```
