@@ -256,3 +256,19 @@ p[2]                   // identical synax, also 30
                        // pointer arithmetic advances by sizeof(int), not by 1 byte
 ```
 
+`*(arr  +i)` and `arr[i]` are exactly the same thing. This is why iterating a contiguous storage (like `std::vector`) is fast: the elements it's next to each other in memory and the CPU cache loses that (more on this below).
+
+# Dynamic allocation with `new` / `delete`:
+
+`new` allocates on the heap and returns a pointer;
+
+`delete` frees it. `new[]` / `delete[]` do the same for arrays.
+
+```cpp
+Enemy* e = new Enemy();    // heap allocated, lives untill you delete it.
+
+e -> tekeTurn();
+delete e;                  // free it - Required, or you leak memory.
+
+int* 
+```
