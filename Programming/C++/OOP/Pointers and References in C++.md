@@ -293,3 +293,14 @@ The modern answer to all three is ***smart pointers***, which free automatically
 
 # Smart pointers (modern C++):
 
+Smart pointers wrap a raw pointer and tie its lifetime to an object, so memory is freed automatically when it's no longer needed.
+
+This is RAII (Resource Acquisition Is Initialization): the resource is released by a destructor, deterministically, with no garbage collector.
+
+```cpp
+include <memory>
+```
+
+`unique_ptr` - single owner:
+
+`std::unique_ptr<T>` owns its object exclusively. When the `unique_ptr` is destroyed, the object is deleted 
