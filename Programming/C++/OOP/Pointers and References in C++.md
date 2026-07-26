@@ -358,4 +358,15 @@ if (auto locked = observer.lock()) { // is it still alive?
 | `shared_ptr<T>` | Yes, shared        | Yes (ref-counted) | Genuinely shared resources                 |
 | `weak_ptr<T>`   | No                 | Yes               | Observing a shared object, breaking cycles |
 
-## Moder conv
+## Modern convention:
+
+owning pointers are smart pointers; a raw pointer means "I'm looking at this but I don't own it, and it's not my job to delete it".
+
+# Pointers, references, and polymorphism:
+
+Runtime polymorphism - calling the right overridden function for the actual object type - only works ***through pointer*** or ***reference to a base class***.
+
+A base-class value can't do it.
+
+```cpp
+```
