@@ -369,4 +369,10 @@ Runtime polymorphism - calling the right overridden function for the actual obje
 A base-class value can't do it.
 
 ```cpp
+struct Entity {
+	virtual void update() = 0;    // virtual => resolved at runtime
+	virtual ~Entity() = default;  // virtual destructor: essential part (see below)
+};
+
+struct Enemy: Entity { void update() override { /*  */ }};
 ```
