@@ -468,7 +468,11 @@ public:
 	Bullet* acquire() {
 		for (Bullet& b : bullets)
 			if (!b.active) { b.active = true; return &b; }
-			return nullptr;        // pool
+			return nullptr;        // pool exhausted
 	}
-}
+	void release(Bullet* b) { b->active = false; }
+};
 ```
+
+# Data-oriented design: patterns VS cache locality:
+
