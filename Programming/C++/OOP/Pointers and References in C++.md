@@ -328,4 +328,17 @@ auto copy = texture;    // OK: both shared ownership, ref count == 2
 // object is destroyed only when both copy and texture are gone.
 ```
 
-Useful for s
+Useful for shared resources (a texture used by many sprites). It's heavier then `unique_ptr` (the count must be maintained, automatically if threads are involved), so don't reach it by default.
+
+## `weak_ptr` - non owning observer:
+
+`std::weak_ptr<T>` observes an object managed by a `shared_ptr` ***without*** keeping it alive.
+
+You call `.lock()` to temporary get a `shared_ptr` if the object still exists.
+
+Its main job is ***breaking reference cycles*** (see the circular-reference pitfall below).
+
+```cpp
+std::shared_ptr<Enemy> e = std::make_shared<Entity>();
+std::weak_ptr<Entity> observ
+```
