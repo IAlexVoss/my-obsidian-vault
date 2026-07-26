@@ -449,6 +449,26 @@ Using an owning pointer both ways would create a cycle that never frees:
 ```cpp
 struct Node {
 	Node* parent = nullptr;    // non-owning, avoids a cycle
-	std::vector
+	std::vector<std_unique_ptr<Node>> children; // owning
+}
+```
+
+## Object pool (avoid allocation in the loop):
+
+Calling `new` / `delete` every frame causes fragmentation and stutter.
+
+A pool pre-allocates objects once and hangs out pointers to reuse them:
+
+```cpp
+class BulletPool {
+	std::vector<Bullet> bullets;   // allocated once, contiguous.
+
+public:
+	explicit BulletPool(size_t n) : bullets(n) {}
+	Bullet* acquire() {
+		for (Bullet& b : bullets)
+			if (!b.active) { b.active = true; return &b; }
+			return nullptr;        // pool
+	}
 }
 ```
