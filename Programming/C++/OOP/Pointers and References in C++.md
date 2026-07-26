@@ -285,5 +285,11 @@ Three classic bugs:
 ```cpp
 Enemy* e = new Enemy();
 delete e;
-
+e -> takeTurn();     // BUG: use-after-delete, e is dangling
+delete e;            // BUG: double delete
 ```
+
+The modern answer to all three is ***smart pointers***, which free automatically.
+
+# Smart pointers (modern C++):
+
