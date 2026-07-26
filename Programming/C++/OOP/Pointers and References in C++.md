@@ -301,7 +301,7 @@ This is RAII (Resource Acquisition Is Initialization): the resource is released 
 include <memory>
 ```
 
-`unique_ptr` - single owner:
+## `unique_ptr` - single owner:
 
 `std::unique_ptr<T>` owns its object exclusively. When the `unique_ptr` is destroyed, the object is deleted. It cannot be copied (that would mean two owners), only ***move***.
 
@@ -316,4 +316,16 @@ e -> takeTurn();
 auto ec = std::move(e);   // OK - transfer ownership; e is now empty (nullptr).
 ```
 
-Use `unique_ptr` as your ***default*** for heap ownership - it has zero overhead compared to a raw 
+Use `unique_ptr` as your ***default*** for heap ownership - it has zero overhead compared to a raw pointer and makes ownership unambiguous.
+
+## `shared_ptr` - shared ownership:
+
+`std::shared_ptr<T>` allows multiple owners. It keeps a ***reference count***; the object is deleted when the last `shared_ptr` to it goes away.
+
+```cpp
+auto texture = std::make_shared<Texture>("grass.png");
+auto copy = texture;    // OK: both shared ownership, ref count == 2
+// object is destroyed only when both copy and texture are gone.
+```
+
+Useful for s
