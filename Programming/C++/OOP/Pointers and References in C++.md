@@ -374,5 +374,24 @@ struct Entity {
 	virtual ~Entity() = default;  // virtual destructor: essential part (see below)
 };
 
-struct Enemy: Entity { void update() override { /*  */ }};
+struct Enemy : Entity { void update() override { /* chase player */ }};
+struct Player : Entity { void update() override { /* read input */ }};
+
+void tick(Entity& e) { // reference to base
+	e.update();        // calls Enemy::update or Player::update, correctly
+}
+
+Enemy goblin;
+tick(goblin);          // runs Enemy::update
+```
+
+# Object slicing - a value-semantic trap:
+
+If you copy a derived object into a base class, the derived part is "sliced off":
+
+```cpp
+Enemy goblin;
+Entity base = goblin;    // BUG: only the Entity part is copied;
+                         // the enemy-ness is lost.
+//base.update();         // would call the base version, not Enemy's.
 ```
