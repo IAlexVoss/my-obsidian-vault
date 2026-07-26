@@ -385,7 +385,7 @@ Enemy goblin;
 tick(goblin);          // runs Enemy::update
 ```
 
-# Object slicing - a value-semantic trap:
+## Object slicing - a value-semantic trap:
 
 If you copy a derived object into a base class, the derived part is "sliced off":
 
@@ -398,3 +398,15 @@ Entity base = goblin;    // BUG: only the Entity part is copied;
 
 This is a key reason engines store polymorphic objects as pointers / references, never as base-class values.
 
+## Virtual destructor:
+
+When you delete a derived object through a base pointer, the base destructor ***must be*** `virtual`, or the derived destructor won't run (leak / undefined behavior):
+
+```cpp
+Entity* e = new Enemy();
+delete e;     // only safe because ~Entity() is virtual.
+```
+
+## Patterns in games and simulations:
+
+These combine everythin
