@@ -407,6 +407,24 @@ Entity* e = new Enemy();
 delete e;     // only safe because ~Entity() is virtual.
 ```
 
-## Patterns in games and simulations:
+# Patterns in games and simulations:
 
-These combine everythin
+These combine everything above into the shapes you'll actually write
+
+## Owning a collection of entities:
+
+The world owns its entities; a container of `unique_ptr` gives clear ownership and correct polymorphic destruction:
+
+```cpp
+std::vector<std::unique_ptr<Entity>> entities;
+entities.push_back(std::make_unique<Enemy>());
+entities.push_back(std::make_unique<Player>());
+
+for (const auto& e : entities) e->update();
+// polymorphic dispatch, no copies
+// all entities are freed automatically when the vector is destroyed.
+```
+
+## Non-owning links between systems:
+
+A component often needs to reach back to its entry, or an AI needs a target - but it
