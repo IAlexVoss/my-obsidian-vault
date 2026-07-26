@@ -340,5 +340,22 @@ Its main job is ***breaking reference cycles*** (see the circular-reference pitf
 
 ```cpp
 std::shared_ptr<Enemy> e = std::make_shared<Entity>();
-std::weak_ptr<Entity> observ
+std::weak_ptr<Entity> observer = e;    // does not increase the owning count
+
+if (auto locked = observer.lock()) { // is it still alive? 
+	locked -> update();
+} else {
+	// the entity has already been destroyed
+}
 ```
+
+# Ownership summary:
+
+| Type            | Owns?              | Copyable?         | Use for                                    |
+| :-------------- | ------------------ | ----------------- | ------------------------------------------ |
+| `T*`(raw)       | No (by convention) | Yes               | Non-owning links, "Just looking"           |
+| `unique_ptr<T>` | Yes, sole          | No (move-only)    | Default heap ownership                     |
+| `shared_ptr<T>` | Yes, shared        | Yes (ref-counted) | Genuinely shared resources                 |
+| `weak_ptr<T>`   | No                 | Yes               | Observing a shared object, breaking cycles |
+
+## Moder conv
