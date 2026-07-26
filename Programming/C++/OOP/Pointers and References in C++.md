@@ -243,3 +243,16 @@ aimAt(turret, &someEnemy);     // the & at the call site signals "might be modif
 
 # Pointers and arrays:
 
+Arrays and pointers are closely related: an array name decays to a pointer to its first element, and indexing is defined in terms of pointer arithmetic.
+
+```cpp
+int particlesp[4] = {10, 20, 30, 40};
+int* p = particles;    // points to particles[0]
+
+*(p + 2);              // == particcles[2] == 30
+p[2]                   // identical synax, also 30
+
+++p;                   // now points to particles[1]
+                       // pointer arithmetic advances by sizeof(int), not by 1 byte
+```
+
