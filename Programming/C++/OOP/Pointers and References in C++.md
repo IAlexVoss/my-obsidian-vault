@@ -303,4 +303,17 @@ include <memory>
 
 `unique_ptr` - single owner:
 
-`std::unique_ptr<T>` owns its object exclusively. When the `unique_ptr` is destroyed, the object is deleted 
+`std::unique_ptr<T>` owns its object exclusively. When the `unique_ptr` is destroyed, the object is deleted. It cannot be copied (that would mean two owners), only ***move***.
+
+```cpp
+#include <memory>
+
+std::unique_ptr<Enemy> e = std::make_unique<Enemy>();
+e -> takeTurn();
+// no delete needed-freed automatically when e goes out of scope.
+// auto ec = e;      // Error can't copy a unique_ptr
+
+auto ec = std::move(e);   // OK - transfer ownership; e is now empty (nullptr).
+```
+
+Use `unique_ptr` as your ***default*** for heap ownership - it has zero overhead compared to a raw 
