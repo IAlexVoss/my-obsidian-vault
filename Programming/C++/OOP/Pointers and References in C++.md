@@ -482,4 +482,16 @@ Following a pointer to somewhere for away in memory is a ***cache miss*** - the 
 
 A design full of pointer-linked objects scattered across the heap (pointer chasing) can be far slower than the same data laid out contiguously.
 
-- Array of Structs (A0S): `std::vector<Pointer>` - each particle's
+- Array of Structs (AoS): `std::vector<Pointer>` - each particle's fields together. Simple
+- Struct of arrays (SoA): `std::vector<float> x, y, z;` - all `x` values contiguous.
+
+When a loop touches only some fields, SoA streams through memory with near-perfect cache use.
+
+## The practical lesion:
+
+pointers and references are for structure and ownership, but in the innermost per-frame loops over thousands of objects, prefer ***contiguous storage and integer indices*** over chains of pointers.
+
+Measure before optimizing, but keep this in mind when a simulation gets slow.
+
+# Common Pitfalls:
+
