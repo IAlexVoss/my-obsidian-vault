@@ -495,3 +495,15 @@ Measure before optimizing, but keep this in mind when a simulation gets slow.
 
 # Common Pitfalls:
 
+## Dangling pointer / reference (use-after-free):
+
+Pointing at an object them has been destroyed. The single most common serious bug in C++:
+
+```cpp
+int* makeDangling() {
+	int local = 42;
+	return &local;    // BUG: 'local' dies when the function returns.
+	                  // the returned pointer is dangling immediately
+}
+```
+
