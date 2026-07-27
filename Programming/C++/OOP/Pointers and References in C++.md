@@ -476,3 +476,10 @@ public:
 
 # Data-oriented design: patterns VS cache locality:
 
+An important performance cave at for hot simulation loops.
+
+Following a pointer to somewhere for away in memory is a ***cache miss*** - the CPU stalls waiting for RAM.
+
+A design full of pointer-linked objects scattered across the heap (pointer chasing) can be far slower than the same data laid out contiguously.
+
+- Array of Structs (A0S): `std::vector<Pointer>` - each particle's
