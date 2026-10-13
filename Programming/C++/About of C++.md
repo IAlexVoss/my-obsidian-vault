@@ -1,4 +1,4 @@
-C++ is non-object oriented language, but you can use it like the object-oriented language (shorter: OOP).
+C++ is a non-object oriented language, but you can use it like the object-oriented language (shorter: OOP).
 
 # C++ terms:
 
